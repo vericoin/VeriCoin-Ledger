@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset='utf-8' />
-  <title>@ledgerhq/wallet-common 0.5.0 | Documentation</title>
+  <title>@ledgerhq/wallet-common 0.6.0 | Documentation</title>
   <meta name='viewport' content='width=device-width,initial-scale=1'>
   <link href='assets/bass.css' type='text/css' rel='stylesheet' />
   <link href='assets/style.css' type='text/css' rel='stylesheet' />
@@ -14,7 +14,7 @@
       <div id='split-left' class='overflow-auto fs0 height-viewport-100'>
         <div class='py1 px2'>
           <h3 class='mb0 no-anchor'>@ledgerhq/wallet-common</h3>
-          <div class='mb1'><code>0.5.0</code></div>
+          <div class='mb1'><code>0.6.0</code></div>
           <input
             placeholder='Filter'
             id='filter-input'
@@ -277,39 +277,9 @@
               
                 
                 <li><a
-                  href='#unit'
+                  href='#accountraw'
                   class="">
-                  Unit
-                  
-                </a>
-                
-                </li>
-              
-                
-                <li><a
-                  href='#operation'
-                  class="">
-                  Operation
-                  
-                </a>
-                
-                </li>
-              
-                
-                <li><a
-                  href='#account'
-                  class="">
-                  Account
-                  
-                </a>
-                
-                </li>
-              
-                
-                <li><a
-                  href='#operationraw'
-                  class="">
-                  OperationRaw
+                  AccountRaw
                   
                 </a>
                 
@@ -327,29 +297,19 @@
               
                 
                 <li><a
+                  href='#dailyoperationssection'
+                  class="">
+                  DailyOperationsSection
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
                   href='#countervaluespairing'
                   class="">
                   CounterValuesPairing
-                  
-                </a>
-                
-                </li>
-              
-                
-                <li><a
-                  href='#histoday'
-                  class="">
-                  Histoday
-                  
-                </a>
-                
-                </li>
-              
-                
-                <li><a
-                  href='#balancehistory'
-                  class="">
-                  BalanceHistory
                   
                 </a>
                 
@@ -377,9 +337,9 @@
               
                 
                 <li><a
-                  href='#calculatecountervalue'
+                  href='#operation'
                   class="">
-                  CalculateCounterValue
+                  Operation
                   
                 </a>
                 
@@ -405,7 +365,7 @@
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/7dadf0774845cc82ddfd3758322bb63cb39ccc38/src/api/coutervalue.js#L5-L5'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/d20f6a71ca8a748e385504a16a43d6fab3bb5c4f/src/api/coutervalue.js#L5-L5'>
       <span>src/api/coutervalue.js</span>
       </a>
     
@@ -453,7 +413,7 @@
   <div class='clearfix'>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/7dadf0774845cc82ddfd3758322bb63cb39ccc38/src/api/coutervalue.js#L19-L48'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/d20f6a71ca8a748e385504a16a43d6fab3bb5c4f/src/api/coutervalue.js#L19-L48'>
       <span>src/api/coutervalue.js</span>
       </a>
     
@@ -462,7 +422,7 @@
 
   
 
-  <div class='pre p1 fill-light mt0'>fetchCurrentCounterValues(currencies: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;Currency>, fiatUnit: <a href="#unit">Unit</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&#x3C;<a href="#countervaluespairing">CounterValuesPairing</a>&#x3C;<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>>></div>
+  <div class='pre p1 fill-light mt0'>fetchCurrentCounterValues(currencies: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;Currency>, fiatUnit: Unit): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&#x3C;<a href="#countervaluespairing">CounterValuesPairing</a>&#x3C;<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>>></div>
   
   
 
@@ -487,7 +447,7 @@
       
         <div class='space-bottom0'>
           <div>
-            <span class='code bold'>fiatUnit</span> <code class='quiet'>(<a href="#unit">Unit</a>)</code>
+            <span class='code bold'>fiatUnit</span> <code class='quiet'>(Unit)</code>
 	    
           </div>
           
@@ -533,7 +493,7 @@
   <div class='clearfix'>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/7dadf0774845cc82ddfd3758322bb63cb39ccc38/src/api/coutervalue.js#L53-L80'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/d20f6a71ca8a748e385504a16a43d6fab3bb5c4f/src/api/coutervalue.js#L53-L80'>
       <span>src/api/coutervalue.js</span>
       </a>
     
@@ -542,7 +502,7 @@
 
   
 
-  <div class='pre p1 fill-light mt0'>fetchHistodayCounterValues(currency: Currency, fiatUnit: <a href="#unit">Unit</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&#x3C;<a href="#histoday">Histoday</a>></div>
+  <div class='pre p1 fill-light mt0'>fetchHistodayCounterValues(currency: Currency, fiatUnit: Unit): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&#x3C;Histoday></div>
   
   
 
@@ -567,7 +527,7 @@
       
         <div class='space-bottom0'>
           <div>
-            <span class='code bold'>fiatUnit</span> <code class='quiet'>(<a href="#unit">Unit</a>)</code>
+            <span class='code bold'>fiatUnit</span> <code class='quiet'>(Unit)</code>
 	    
           </div>
           
@@ -581,7 +541,7 @@
   
     
       <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&#x3C;<a href="#histoday">Histoday</a>></code>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&#x3C;Histoday></code>
     
   
 
@@ -613,7 +573,7 @@
   <div class='clearfix'>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/7dadf0774845cc82ddfd3758322bb63cb39ccc38/src/api/coutervalue.js#L85-L101'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/d20f6a71ca8a748e385504a16a43d6fab3bb5c4f/src/api/coutervalue.js#L85-L101'>
       <span>src/api/coutervalue.js</span>
       </a>
     
@@ -622,7 +582,7 @@
 
   
 
-  <div class='pre p1 fill-light mt0'>fetchHistodayCounterValuesMultiple(currencies: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;Currency>, fiatUnit: <a href="#unit">Unit</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&#x3C;<a href="#countervaluespairing">CounterValuesPairing</a>&#x3C;<a href="#histoday">Histoday</a>>></div>
+  <div class='pre p1 fill-light mt0'>fetchHistodayCounterValuesMultiple(currencies: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;Currency>, fiatUnit: Unit): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&#x3C;<a href="#countervaluespairing">CounterValuesPairing</a>&#x3C;Histoday>></div>
   
   
 
@@ -647,7 +607,7 @@
       
         <div class='space-bottom0'>
           <div>
-            <span class='code bold'>fiatUnit</span> <code class='quiet'>(<a href="#unit">Unit</a>)</code>
+            <span class='code bold'>fiatUnit</span> <code class='quiet'>(Unit)</code>
 	    
           </div>
           
@@ -661,7 +621,7 @@
   
     
       <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&#x3C;<a href="#countervaluespairing">CounterValuesPairing</a>&#x3C;<a href="#histoday">Histoday</a>>></code>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&#x3C;<a href="#countervaluespairing">CounterValuesPairing</a>&#x3C;Histoday>></code>
     
   
 
@@ -701,7 +661,7 @@
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/7dadf0774845cc82ddfd3758322bb63cb39ccc38/src/DataModel.js#L10-L18'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/d20f6a71ca8a748e385504a16a43d6fab3bb5c4f/src/DataModel.js#L10-L18'>
       <span>src/DataModel.js</span>
       </a>
     
@@ -749,7 +709,7 @@
   <div class='clearfix'>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/7dadf0774845cc82ddfd3758322bb63cb39ccc38/src/DataModel.js#L6-L9'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/d20f6a71ca8a748e385504a16a43d6fab3bb5c4f/src/DataModel.js#L6-L9'>
       <span>src/DataModel.js</span>
       </a>
     
@@ -832,7 +792,7 @@
   <div class='clearfix'>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/7dadf0774845cc82ddfd3758322bb63cb39ccc38/src/DataModel.js#L20-L23'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/d20f6a71ca8a748e385504a16a43d6fab3bb5c4f/src/DataModel.js#L20-L23'>
       <span>src/DataModel.js</span>
       </a>
     
@@ -846,7 +806,7 @@
   
     <p>
       Type:
-      {wrap: function (raw: R): M, unwrap: function (data: M): R, migrations: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;function (any): (R | any)>}
+      {decode: function (raw: R): M, encode: function (data: M): R, migrations: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;function (any): (R | any)>}
     </p>
   
   
@@ -865,13 +825,13 @@
     <div>
       
         <div class='space-bottom0'>
-          <span class='code bold'>wrap</span> <code class='quiet'>(function (raw: R): M)</code>
+          <span class='code bold'>decode</span> <code class='quiet'>(function (raw: R): M)</code>
           
           
         </div>
       
         <div class='space-bottom0'>
-          <span class='code bold'>unwrap</span> <code class='quiet'>(function (data: M): R)</code>
+          <span class='code bold'>encode</span> <code class='quiet'>(function (data: M): R)</code>
           
           
         </div>
@@ -915,7 +875,7 @@
   <div class='clearfix'>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/7dadf0774845cc82ddfd3758322bb63cb39ccc38/src/DataModel.js#L36-L58'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/d20f6a71ca8a748e385504a16a43d6fab3bb5c4f/src/DataModel.js#L36-L58'>
       <span>src/DataModel.js</span>
       </a>
     
@@ -995,7 +955,7 @@
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/7dadf0774845cc82ddfd3758322bb63cb39ccc38/src/helpers/account.js#L5-L12'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/d20f6a71ca8a748e385504a16a43d6fab3bb5c4f/src/helpers/account.js#L5-L12'>
       <span>src/helpers/account.js</span>
       </a>
     
@@ -1043,7 +1003,7 @@
   <div class='clearfix'>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/7dadf0774845cc82ddfd3758322bb63cb39ccc38/src/helpers/account.js#L24-L44'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/d20f6a71ca8a748e385504a16a43d6fab3bb5c4f/src/helpers/account.js#L24-L44'>
       <span>src/helpers/account.js</span>
       </a>
     
@@ -1055,7 +1015,7 @@ for the balance history of an account.
 The last item of the array is the balance available right now.</p>
 
 
-  <div class='pre p1 fill-light mt0'>getBalanceHistory(account: <a href="#account">Account</a>, daysCount: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>): <a href="#balancehistory">BalanceHistory</a></div>
+  <div class='pre p1 fill-light mt0'>getBalanceHistory(account: Account, daysCount: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>): BalanceHistory</div>
   
   
 
@@ -1072,7 +1032,7 @@ The last item of the array is the balance available right now.</p>
       
         <div class='space-bottom0'>
           <div>
-            <span class='code bold'>account</span> <code class='quiet'>(<a href="#account">Account</a>)</code>
+            <span class='code bold'>account</span> <code class='quiet'>(Account)</code>
 	    
           </div>
           
@@ -1094,7 +1054,7 @@ The last item of the array is the balance available right now.</p>
   
     
       <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="#balancehistory">BalanceHistory</a></code>
+      <code>BalanceHistory</code>
     
   
 
@@ -1126,7 +1086,7 @@ The last item of the array is the balance available right now.</p>
   <div class='clearfix'>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/7dadf0774845cc82ddfd3758322bb63cb39ccc38/src/helpers/account.js#L52-L81'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/d20f6a71ca8a748e385504a16a43d6fab3bb5c4f/src/helpers/account.js#L52-L81'>
       <span>src/helpers/account.js</span>
       </a>
     
@@ -1138,7 +1098,7 @@ and using a CalculateCounterValue function (see countervalue helper)
 NB the last item of the array is actually the current total balance.</p>
 
 
-  <div class='pre p1 fill-light mt0'>getBalanceHistorySum(accounts: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="#account">Account</a>>, daysCount: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>, fiatUnit: <a href="#unit">Unit</a>, calculateCounterValue: <a href="#calculatecountervalue">CalculateCounterValue</a>): <a href="#balancehistory">BalanceHistory</a></div>
+  <div class='pre p1 fill-light mt0'>getBalanceHistorySum(accounts: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;Account>, daysCount: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>, fiatUnit: Unit, calculateCounterValue: CalculateCounterValue): BalanceHistory</div>
   
   
 
@@ -1155,7 +1115,7 @@ NB the last item of the array is actually the current total balance.</p>
       
         <div class='space-bottom0'>
           <div>
-            <span class='code bold'>accounts</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="#account">Account</a>>)</code>
+            <span class='code bold'>accounts</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;Account>)</code>
 	    
           </div>
           
@@ -1171,7 +1131,7 @@ NB the last item of the array is actually the current total balance.</p>
       
         <div class='space-bottom0'>
           <div>
-            <span class='code bold'>fiatUnit</span> <code class='quiet'>(<a href="#unit">Unit</a>)</code>
+            <span class='code bold'>fiatUnit</span> <code class='quiet'>(Unit)</code>
 	    
           </div>
           
@@ -1179,7 +1139,7 @@ NB the last item of the array is actually the current total balance.</p>
       
         <div class='space-bottom0'>
           <div>
-            <span class='code bold'>calculateCounterValue</span> <code class='quiet'>(<a href="#calculatecountervalue">CalculateCounterValue</a>)</code>
+            <span class='code bold'>calculateCounterValue</span> <code class='quiet'>(CalculateCounterValue)</code>
 	    
           </div>
           
@@ -1193,7 +1153,7 @@ NB the last item of the array is actually the current total balance.</p>
   
     
       <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="#balancehistory">BalanceHistory</a></code>
+      <code>BalanceHistory</code>
     
   
 
@@ -1225,7 +1185,7 @@ NB the last item of the array is actually the current total balance.</p>
   <div class='clearfix'>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/7dadf0774845cc82ddfd3758322bb63cb39ccc38/src/helpers/account.js#L87-L109'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/d20f6a71ca8a748e385504a16a43d6fab3bb5c4f/src/helpers/account.js#L87-L109'>
       <span>src/helpers/account.js</span>
       </a>
     
@@ -1235,7 +1195,7 @@ NB the last item of the array is actually the current total balance.</p>
   <p>Return a list of <code>{count}</code> operations grouped by day.</p>
 
 
-  <div class='pre p1 fill-light mt0'>groupAccountOperationsByDay(account: <a href="#account">Account</a>, count: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;DailyOperationsSection></div>
+  <div class='pre p1 fill-light mt0'>groupAccountOperationsByDay(account: Account, count: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="#dailyoperationssection">DailyOperationsSection</a>></div>
   
   
 
@@ -1252,7 +1212,7 @@ NB the last item of the array is actually the current total balance.</p>
       
         <div class='space-bottom0'>
           <div>
-            <span class='code bold'>account</span> <code class='quiet'>(<a href="#account">Account</a>)</code>
+            <span class='code bold'>account</span> <code class='quiet'>(Account)</code>
 	    
           </div>
           
@@ -1274,7 +1234,7 @@ NB the last item of the array is actually the current total balance.</p>
   
     
       <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;DailyOperationsSection></code>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="#dailyoperationssection">DailyOperationsSection</a>></code>
     
   
 
@@ -1306,7 +1266,7 @@ NB the last item of the array is actually the current total balance.</p>
   <div class='clearfix'>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/7dadf0774845cc82ddfd3758322bb63cb39ccc38/src/helpers/account.js#L114-L154'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/d20f6a71ca8a748e385504a16a43d6fab3bb5c4f/src/helpers/account.js#L114-L154'>
       <span>src/helpers/account.js</span>
       </a>
     
@@ -1315,7 +1275,7 @@ NB the last item of the array is actually the current total balance.</p>
 
   
 
-  <div class='pre p1 fill-light mt0'>groupAccountsOperationsByDay(accounts: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="#account">Account</a>>, count: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;DailyOperationsSection></div>
+  <div class='pre p1 fill-light mt0'>groupAccountsOperationsByDay(accounts: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;Account>, count: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="#dailyoperationssection">DailyOperationsSection</a>></div>
   
   
 
@@ -1332,7 +1292,7 @@ NB the last item of the array is actually the current total balance.</p>
       
         <div class='space-bottom0'>
           <div>
-            <span class='code bold'>accounts</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="#account">Account</a>>)</code>
+            <span class='code bold'>accounts</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;Account>)</code>
 	    
           </div>
           
@@ -1354,7 +1314,7 @@ NB the last item of the array is actually the current total balance.</p>
   
     
       <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;DailyOperationsSection></code>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="#dailyoperationssection">DailyOperationsSection</a>></code>
     
   
 
@@ -1394,7 +1354,7 @@ NB the last item of the array is actually the current total balance.</p>
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/7dadf0774845cc82ddfd3758322bb63cb39ccc38/src/helpers/countervalue.js#L6-L6'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/d20f6a71ca8a748e385504a16a43d6fab3bb5c4f/src/helpers/countervalue.js#L6-L6'>
       <span>src/helpers/countervalue.js</span>
       </a>
     
@@ -1442,7 +1402,7 @@ NB the last item of the array is actually the current total balance.</p>
   <div class='clearfix'>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/7dadf0774845cc82ddfd3758322bb63cb39ccc38/src/helpers/countervalue.js#L14-L24'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/d20f6a71ca8a748e385504a16a43d6fab3bb5c4f/src/helpers/countervalue.js#L14-L24'>
       <span>src/helpers/countervalue.js</span>
       </a>
     
@@ -1485,7 +1445,7 @@ NB you still have to sync prices yourself. (later we might embrace future React 
   
     
       <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="#calculatecountervalue">CalculateCounterValue</a></code>
+      <code>CalculateCounterValue</code>
     
   
 
@@ -1517,7 +1477,7 @@ NB you still have to sync prices yourself. (later we might embrace future React 
   <div class='clearfix'>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/7dadf0774845cc82ddfd3758322bb63cb39ccc38/src/helpers/countervalue.js#L32-L33'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/d20f6a71ca8a748e385504a16a43d6fab3bb5c4f/src/helpers/countervalue.js#L32-L33'>
       <span>src/helpers/countervalue.js</span>
       </a>
     
@@ -1593,7 +1553,7 @@ NB you still have to sync prices yourself. (later we might embrace future React 
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/7dadf0774845cc82ddfd3758322bb63cb39ccc38/src/mock/account.js#L5-L5'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/d20f6a71ca8a748e385504a16a43d6fab3bb5c4f/src/mock/account.js#L5-L5'>
       <span>src/mock/account.js</span>
       </a>
     
@@ -1641,7 +1601,7 @@ NB you still have to sync prices yourself. (later we might embrace future React 
   <div class='clearfix'>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/7dadf0774845cc82ddfd3758322bb63cb39ccc38/src/mock/account.js#L15-L18'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/d20f6a71ca8a748e385504a16a43d6fab3bb5c4f/src/mock/account.js#L15-L18'>
       <span>src/mock/account.js</span>
       </a>
     
@@ -1708,7 +1668,7 @@ NB you still have to sync prices yourself. (later we might embrace future React 
   <div class='clearfix'>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/7dadf0774845cc82ddfd3758322bb63cb39ccc38/src/mock/account.js#L23-L25'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/d20f6a71ca8a748e385504a16a43d6fab3bb5c4f/src/mock/account.js#L23-L25'>
       <span>src/mock/account.js</span>
       </a>
     
@@ -1783,7 +1743,7 @@ NB you still have to sync prices yourself. (later we might embrace future React 
   <div class='clearfix'>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/7dadf0774845cc82ddfd3758322bb63cb39ccc38/src/mock/account.js#L30-L35'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/d20f6a71ca8a748e385504a16a43d6fab3bb5c4f/src/mock/account.js#L30-L35'>
       <span>src/mock/account.js</span>
       </a>
     
@@ -1858,7 +1818,7 @@ NB you still have to sync prices yourself. (later we might embrace future React 
   <div class='clearfix'>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/7dadf0774845cc82ddfd3758322bb63cb39ccc38/src/mock/account.js#L41-L64'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/d20f6a71ca8a748e385504a16a43d6fab3bb5c4f/src/mock/account.js#L41-L67'>
       <span>src/mock/account.js</span>
       </a>
     
@@ -1867,7 +1827,7 @@ NB you still have to sync prices yourself. (later we might embrace future React 
 
   
 
-  <div class='pre p1 fill-light mt0'>genOperation(account: <a href="#account">Account</a>, ops: any, currency: Currency, rng: Prando): <a href="#operation">Operation</a></div>
+  <div class='pre p1 fill-light mt0'>genOperation(account: Account, ops: any, currency: Currency, rng: Prando): <a href="#operation">Operation</a></div>
   
   
 
@@ -1884,7 +1844,7 @@ NB you still have to sync prices yourself. (later we might embrace future React 
       
         <div class='space-bottom0'>
           <div>
-            <span class='code bold'>account</span> <code class='quiet'>(<a href="#account">Account</a>)</code>
+            <span class='code bold'>account</span> <code class='quiet'>(Account)</code>
 	    
           </div>
           
@@ -1954,7 +1914,7 @@ NB you still have to sync prices yourself. (later we might embrace future React 
   <div class='clearfix'>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/7dadf0774845cc82ddfd3758322bb63cb39ccc38/src/mock/account.js#L69-L84'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/d20f6a71ca8a748e385504a16a43d6fab3bb5c4f/src/mock/account.js#L72-L87'>
       <span>src/mock/account.js</span>
       </a>
     
@@ -1963,7 +1923,7 @@ NB you still have to sync prices yourself. (later we might embrace future React 
 
   
 
-  <div class='pre p1 fill-light mt0'>genAddingOperationsInAccount(account: <a href="#account">Account</a>, count: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>, seed: (<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a> | <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)): <a href="#account">Account</a></div>
+  <div class='pre p1 fill-light mt0'>genAddingOperationsInAccount(account: Account, count: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>, seed: (<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a> | <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)): Account</div>
   
   
 
@@ -1980,7 +1940,7 @@ NB you still have to sync prices yourself. (later we might embrace future React 
       
         <div class='space-bottom0'>
           <div>
-            <span class='code bold'>account</span> <code class='quiet'>(<a href="#account">Account</a>)</code>
+            <span class='code bold'>account</span> <code class='quiet'>(Account)</code>
 	    
           </div>
           
@@ -2010,7 +1970,7 @@ NB you still have to sync prices yourself. (later we might embrace future React 
   
     
       <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="#account">Account</a></code>
+      <code>Account</code>
     
   
 
@@ -2042,7 +2002,7 @@ NB you still have to sync prices yourself. (later we might embrace future React 
   <div class='clearfix'>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/7dadf0774845cc82ddfd3758322bb63cb39ccc38/src/mock/account.js#L90-L117'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/d20f6a71ca8a748e385504a16a43d6fab3bb5c4f/src/mock/account.js#L93-L127'>
       <span>src/mock/account.js</span>
       </a>
     
@@ -2051,7 +2011,7 @@ NB you still have to sync prices yourself. (later we might embrace future React 
 
   
 
-  <div class='pre p1 fill-light mt0'>genAccount(id: (<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a> | <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)): <a href="#account">Account</a></div>
+  <div class='pre p1 fill-light mt0'>genAccount(id: (<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a> | <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)): Account</div>
   
   
 
@@ -2083,7 +2043,7 @@ NB you still have to sync prices yourself. (later we might embrace future React 
   
     
       <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="#account">Account</a></code>
+      <code>Account</code>
     
   
 
@@ -2123,7 +2083,7 @@ NB you still have to sync prices yourself. (later we might embrace future React 
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/7dadf0774845cc82ddfd3758322bb63cb39ccc38/src/models/account.js#L5-L5'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/d20f6a71ca8a748e385504a16a43d6fab3bb5c4f/src/models/account.js#L5-L5'>
       <span>src/models/account.js</span>
       </a>
     
@@ -2171,7 +2131,7 @@ NB you still have to sync prices yourself. (later we might embrace future React 
   <div class='clearfix'>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/7dadf0774845cc82ddfd3758322bb63cb39ccc38/src/models/account.js#L13-L17'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/d20f6a71ca8a748e385504a16a43d6fab3bb5c4f/src/models/account.js#L13-L17'>
       <span>src/models/account.js</span>
       </a>
     
@@ -2246,7 +2206,7 @@ NB you still have to sync prices yourself. (later we might embrace future React 
   <div class='clearfix'>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/7dadf0774845cc82ddfd3758322bb63cb39ccc38/src/models/account.js#L27-L71'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/d20f6a71ca8a748e385504a16a43d6fab3bb5c4f/src/models/account.js#L27-L72'>
       <span>src/models/account.js</span>
       </a>
     
@@ -2287,7 +2247,7 @@ NB you still have to sync prices yourself. (later we might embrace future React 
   
     
       <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="#datamodel">DataModel</a>&#x3C;<a href="#accountraw">AccountRaw</a>, <a href="#account">Account</a>></code>
+      <code><a href="#datamodel">DataModel</a>&#x3C;<a href="#accountraw">AccountRaw</a>, Account></code>
     
   
 
@@ -2331,75 +2291,28 @@ NB you still have to sync prices yourself. (later we might embrace future React 
   
   <div class='clearfix'>
     
-    <h3 class='fl m0' id='unit'>
-      Unit
+    <h3 class='fl m0' id='accountraw'>
+      AccountRaw
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/7dadf0774845cc82ddfd3758322bb63cb39ccc38/src/types.js#L15-L15'>
-      <span>src/types.js</span>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/d20f6a71ca8a748e385504a16a43d6fab3bb5c4f/src/types/account.js#L7-L12'>
+      <span>src/types/account.js</span>
       </a>
     
   </div>
   
 
-  
+  <p>Account</p>
+<pre><code>                             -------
+</code></pre>
 
-  <div class='pre p1 fill-light mt0'>Unit</div>
-  
-  
 
-  
-  
-  
-  
-  
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-</section>
-
-          
-        
-          
-            <section class='p2 mb2 clearfix bg-white minishadow'>
-
-  
-  <div class='clearfix'>
-    
-    <h3 class='fl m0' id='operation'>
-      Operation
-    </h3>
-    
-    
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/7dadf0774845cc82ddfd3758322bb63cb39ccc38/src/types.js#L17-L18'>
-      <span>src/types.js</span>
-      </a>
-    
-  </div>
-  
-
-  
-
-  <div class='pre p1 fill-light mt0'>Operation</div>
+  <div class='pre p1 fill-light mt0'>AccountRaw</div>
   
     <p>
       Type:
-      {id: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, hash: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, address: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, amount: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>, date: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Date">Date</a>, blockHeight: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>?, accountId: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>}
+      {id: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, xpub: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, path: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, rootPath: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, name: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, address: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, addresses: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>>, balance: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>, coinType: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>, lastBlockHeight: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>, operationsSize: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>, archived: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a>, minConfirmations: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>, index: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>, balanceByDay: any, operations: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;OperationRaw>, unitMagnitude: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>}
     </p>
   
   
@@ -2419,114 +2332,6 @@ NB you still have to sync prices yourself. (later we might embrace future React 
       
         <div class='space-bottom0'>
           <span class='code bold'>id</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
-          
-          
-        </div>
-      
-        <div class='space-bottom0'>
-          <span class='code bold'>hash</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
-          
-          
-        </div>
-      
-        <div class='space-bottom0'>
-          <span class='code bold'>address</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
-          
-          
-        </div>
-      
-        <div class='space-bottom0'>
-          <span class='code bold'>amount</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
-          
-          
-        </div>
-      
-        <div class='space-bottom0'>
-          <span class='code bold'>date</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Date">Date</a>)</code>
-          
-          
-        </div>
-      
-        <div class='space-bottom0'>
-          <span class='code bold'>blockHeight</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>?)</code>
-          
-          
-        </div>
-      
-        <div class='space-bottom0'>
-          <span class='code bold'>accountId</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
-          
-          
-        </div>
-      
-    </div>
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-</section>
-
-          
-        
-          
-            <section class='p2 mb2 clearfix bg-white minishadow'>
-
-  
-  <div class='clearfix'>
-    
-    <h3 class='fl m0' id='account'>
-      Account
-    </h3>
-    
-    
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/7dadf0774845cc82ddfd3758322bb63cb39ccc38/src/types.js#L39-L40'>
-      <span>src/types.js</span>
-      </a>
-    
-  </div>
-  
-
-  
-
-  <div class='pre p1 fill-light mt0'>Account</div>
-  
-    <p>
-      Type:
-      {id: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, name: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, xpub: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, address: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, balance: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>, currency: Currency, unit: <a href="#unit">Unit</a>, lastBlockHeight: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>, operations: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="#operation">Operation</a>>, operationsSize: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>, archived: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a>, minConfirmations: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>}
-    </p>
-  
-  
-
-  
-  
-  
-  
-  
-  
-
-  
-
-  
-    <div class='py1 quiet mt1 prose-big'>Properties</div>
-    <div>
-      
-        <div class='space-bottom0'>
-          <span class='code bold'>id</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
-          
-          
-        </div>
-      
-        <div class='space-bottom0'>
-          <span class='code bold'>name</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
           
           
         </div>
@@ -2538,7 +2343,31 @@ NB you still have to sync prices yourself. (later we might embrace future React 
         </div>
       
         <div class='space-bottom0'>
+          <span class='code bold'>path</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <span class='code bold'>rootPath</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <span class='code bold'>name</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          
+          
+        </div>
+      
+        <div class='space-bottom0'>
           <span class='code bold'>address</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <span class='code bold'>addresses</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>>)</code>
           
           
         </div>
@@ -2550,25 +2379,13 @@ NB you still have to sync prices yourself. (later we might embrace future React 
         </div>
       
         <div class='space-bottom0'>
-          <span class='code bold'>currency</span> <code class='quiet'>(Currency)</code>
-          
-          
-        </div>
-      
-        <div class='space-bottom0'>
-          <span class='code bold'>unit</span> <code class='quiet'>(<a href="#unit">Unit</a>)</code>
+          <span class='code bold'>coinType</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
           
           
         </div>
       
         <div class='space-bottom0'>
           <span class='code bold'>lastBlockHeight</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
-          
-          
-        </div>
-      
-        <div class='space-bottom0'>
-          <span class='code bold'>operations</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="#operation">Operation</a>>)</code>
           
           
         </div>
@@ -2591,98 +2408,26 @@ NB you still have to sync prices yourself. (later we might embrace future React 
           
         </div>
       
-    </div>
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-</section>
-
-          
-        
-          
-            <section class='p2 mb2 clearfix bg-white minishadow'>
-
-  
-  <div class='clearfix'>
-    
-    <h3 class='fl m0' id='operationraw'>
-      OperationRaw
-    </h3>
-    
-    
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/7dadf0774845cc82ddfd3758322bb63cb39ccc38/src/types.js#L70-L71'>
-      <span>src/types.js</span>
-      </a>
-    
-  </div>
-  
-
-  
-
-  <div class='pre p1 fill-light mt0'>OperationRaw</div>
-  
-    <p>
-      Type:
-      {id: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, hash: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, address: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, amount: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>, date: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, blockHeight: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>?}
-    </p>
-  
-  
-
-  
-  
-  
-  
-  
-  
-
-  
-
-  
-    <div class='py1 quiet mt1 prose-big'>Properties</div>
-    <div>
-      
         <div class='space-bottom0'>
-          <span class='code bold'>id</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          <span class='code bold'>index</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
           
           
         </div>
       
         <div class='space-bottom0'>
-          <span class='code bold'>hash</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          <span class='code bold'>balanceByDay</span> <code class='quiet'>(any)</code>
           
           
         </div>
       
         <div class='space-bottom0'>
-          <span class='code bold'>address</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          <span class='code bold'>operations</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;OperationRaw>)</code>
           
           
         </div>
       
         <div class='space-bottom0'>
-          <span class='code bold'>amount</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
-          
-          
-        </div>
-      
-        <div class='space-bottom0'>
-          <span class='code bold'>date</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
-          
-          
-        </div>
-      
-        <div class='space-bottom0'>
-          <span class='code bold'>blockHeight</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>?)</code>
+          <span class='code bold'>unitMagnitude</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
           
           
         </div>
@@ -2716,20 +2461,77 @@ NB you still have to sync prices yourself. (later we might embrace future React 
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/7dadf0774845cc82ddfd3758322bb63cb39ccc38/src/types.js#L81-L82'>
-      <span>src/types.js</span>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/d20f6a71ca8a748e385504a16a43d6fab3bb5c4f/src/types/index.js#L18-L18'>
+      <span>src/types/index.js</span>
       </a>
     
   </div>
   
 
-  
+  <p>Common models types
+===================</p>
+<p>Reference types to inspire from as this will comes from the libcore:
+<a href="https://github.com/KhalilBellakrid/lib-ledger-core/tree/develop/core/src/api">https://github.com/KhalilBellakrid/lib-ledger-core/tree/develop/core/src/api</a></p>
+<p>NB some bug in documentation w\ flowtypes <a href="https://github.com/documentationjs/documentation/issues/742">https://github.com/documentationjs/documentation/issues/742</a>
+^as soon as fixed, will use /** in the types properties to export doc</p>
+
 
   <div class='pre p1 fill-light mt0'>AccountRaw</div>
   
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='dailyoperationssection'>
+      DailyOperationsSection
+    </h3>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/d20f6a71ca8a748e385504a16a43d6fab3bb5c4f/src/types/index.js#L27-L30'>
+      <span>src/types/index.js</span>
+      </a>
+    
+  </div>
+  
+
+  <h2>Other stuff</h2>
+
+
+  <div class='pre p1 fill-light mt0'>DailyOperationsSection</div>
+  
     <p>
       Type:
-      {id: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, name: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, xpub: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, address: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, balance: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>, coinType: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>, lastBlockHeight: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>, unitMagnitude: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>, operations: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="#operationraw">OperationRaw</a>>, operationsSize: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>, archived: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a>, minConfirmations: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>}
+      {day: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Date">Date</a>, data: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="#operation">Operation</a>>}
     </p>
   
   
@@ -2748,73 +2550,13 @@ NB you still have to sync prices yourself. (later we might embrace future React 
     <div>
       
         <div class='space-bottom0'>
-          <span class='code bold'>id</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          <span class='code bold'>day</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Date">Date</a>)</code>
           
           
         </div>
       
         <div class='space-bottom0'>
-          <span class='code bold'>name</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
-          
-          
-        </div>
-      
-        <div class='space-bottom0'>
-          <span class='code bold'>xpub</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
-          
-          
-        </div>
-      
-        <div class='space-bottom0'>
-          <span class='code bold'>address</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
-          
-          
-        </div>
-      
-        <div class='space-bottom0'>
-          <span class='code bold'>balance</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
-          
-          
-        </div>
-      
-        <div class='space-bottom0'>
-          <span class='code bold'>coinType</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
-          
-          
-        </div>
-      
-        <div class='space-bottom0'>
-          <span class='code bold'>lastBlockHeight</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
-          
-          
-        </div>
-      
-        <div class='space-bottom0'>
-          <span class='code bold'>unitMagnitude</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
-          
-          
-        </div>
-      
-        <div class='space-bottom0'>
-          <span class='code bold'>operations</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="#operationraw">OperationRaw</a>>)</code>
-          
-          
-        </div>
-      
-        <div class='space-bottom0'>
-          <span class='code bold'>operationsSize</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
-          
-          
-        </div>
-      
-        <div class='space-bottom0'>
-          <span class='code bold'>archived</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a>)</code>
-          
-          
-        </div>
-      
-        <div class='space-bottom0'>
-          <span class='code bold'>minConfirmations</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
+          <span class='code bold'>data</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="#operation">Operation</a>>)</code>
           
           
         </div>
@@ -2848,14 +2590,14 @@ NB you still have to sync prices yourself. (later we might embrace future React 
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/7dadf0774845cc82ddfd3758322bb63cb39ccc38/src/types.js#L106-L109'>
-      <span>src/types.js</span>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/d20f6a71ca8a748e385504a16a43d6fab3bb5c4f/src/types/index.js#L37-L40'>
+      <span>src/types/index.js</span>
       </a>
     
   </div>
   
 
-  <p>nesting object map: crypto ticker -> fiat code -> Inner
+  <p>Nesting object map: crypto ticker -> fiat code -> Inner
 e.g. CounterValuesPairing<number> can be { BTC: { USD: 1 } }</p>
 
 
@@ -2900,123 +2642,13 @@ e.g. CounterValuesPairing<number> can be { BTC: { USD: 1 } }</p>
   
   <div class='clearfix'>
     
-    <h3 class='fl m0' id='histoday'>
-      Histoday
-    </h3>
-    
-    
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/7dadf0774845cc82ddfd3758322bb63cb39ccc38/src/types.js#L114-L115'>
-      <span>src/types.js</span>
-      </a>
-    
-  </div>
-  
-
-  
-
-  <div class='pre p1 fill-light mt0'>Histoday</div>
-  
-    <p>
-      Type:
-      {}
-    </p>
-  
-  
-
-  
-  
-  
-  
-  
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-</section>
-
-          
-        
-          
-            <section class='p2 mb2 clearfix bg-white minishadow'>
-
-  
-  <div class='clearfix'>
-    
-    <h3 class='fl m0' id='balancehistory'>
-      BalanceHistory
-    </h3>
-    
-    
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/7dadf0774845cc82ddfd3758322bb63cb39ccc38/src/types.js#L118-L119'>
-      <span>src/types.js</span>
-      </a>
-    
-  </div>
-  
-
-  
-
-  <div class='pre p1 fill-light mt0'>BalanceHistory</div>
-  
-    <p>
-      Type:
-      <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;{date: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Date">Date</a>, value: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>}>
-    </p>
-  
-  
-
-  
-  
-  
-  
-  
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-</section>
-
-          
-        
-          
-            <section class='p2 mb2 clearfix bg-white minishadow'>
-
-  
-  <div class='clearfix'>
-    
     <h3 class='fl m0' id='getpairhistory'>
       GetPairHistory
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/7dadf0774845cc82ddfd3758322bb63cb39ccc38/src/types.js#L122-L128'>
-      <span>src/types.js</span>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/d20f6a71ca8a748e385504a16a43d6fab3bb5c4f/src/types/index.js#L49-L55'>
+      <span>src/types/index.js</span>
       </a>
     
   </div>
@@ -3075,8 +2707,8 @@ It it up to GetPairHistory implementation to chose the date granularity to use.<
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/7dadf0774845cc82ddfd3758322bb63cb39ccc38/src/types.js#L134-L137'>
-      <span>src/types.js</span>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/d20f6a71ca8a748e385504a16a43d6fab3bb5c4f/src/types/index.js#L61-L64'>
+      <span>src/types/index.js</span>
       </a>
     
   </div>
@@ -3127,25 +2759,28 @@ if date is not provided (falsy), Calc will return the "latest" countervalue</p>
   
   <div class='clearfix'>
     
-    <h3 class='fl m0' id='calculatecountervalue'>
-      CalculateCounterValue
+    <h3 class='fl m0' id='operation'>
+      Operation
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/7dadf0774845cc82ddfd3758322bb63cb39ccc38/src/types.js#L140-L141'>
-      <span>src/types.js</span>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/d20f6a71ca8a748e385504a16a43d6fab3bb5c4f/src/types/operation.js#L3-L8'>
+      <span>src/types/operation.js</span>
       </a>
     
   </div>
   
 
-  
+  <p>Operation</p>
+<pre><code>                            ---------
+</code></pre>
 
-  <div class='pre p1 fill-light mt0'>CalculateCounterValue</div>
+
+  <div class='pre p1 fill-light mt0'>Operation</div>
   
     <p>
       Type:
-      function (cur: Currency, fiat: <a href="#unit">Unit</a>): <a href="#calc">Calc</a>
+      {id: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, hash: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, address: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, amount: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>, blockHeight: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>, accountId: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, confirmations: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>, date: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Date">Date</a>}
     </p>
   
   
@@ -3159,6 +2794,59 @@ if date is not provided (falsy), Calc will return the "latest" countervalue</p>
 
   
 
+  
+    <div class='py1 quiet mt1 prose-big'>Properties</div>
+    <div>
+      
+        <div class='space-bottom0'>
+          <span class='code bold'>id</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <span class='code bold'>hash</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <span class='code bold'>address</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <span class='code bold'>amount</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
+          
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <span class='code bold'>blockHeight</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
+          
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <span class='code bold'>accountId</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <span class='code bold'>confirmations</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
+          
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <span class='code bold'>date</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Date">Date</a>)</code>
+          
+          
+        </div>
+      
+    </div>
   
 
   
