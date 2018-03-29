@@ -65,6 +65,46 @@
               
                 
                 <li><a
+                  href='#makechunks'
+                  class="">
+                  makeChunks
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#parsechunksreducer'
+                  class="">
+                  parseChunksReducer
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#arechunkscomplete'
+                  class="">
+                  areChunksComplete
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#chunkstoresult'
+                  class="">
+                  chunksToResult
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
                   href='#datamodel'
                   class=" toggle-sibling">
                   DataModel
@@ -377,7 +417,7 @@
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/4dcffe5131b48c9e5b051e6e823d14494ed9794e/src/api/countervalue.js#L5-L5'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/0cbd71b9521a440c68a783f78950668a107bc8b7/src/api/countervalue.js#L5-L5'>
       <span>src/api/countervalue.js</span>
       </a>
     
@@ -425,7 +465,7 @@
   <div class='clearfix'>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/4dcffe5131b48c9e5b051e6e823d14494ed9794e/src/api/countervalue.js#L19-L50'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/0cbd71b9521a440c68a783f78950668a107bc8b7/src/api/countervalue.js#L19-L50'>
       <span>src/api/countervalue.js</span>
       </a>
     
@@ -505,7 +545,7 @@
   <div class='clearfix'>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/4dcffe5131b48c9e5b051e6e823d14494ed9794e/src/api/countervalue.js#L55-L82'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/0cbd71b9521a440c68a783f78950668a107bc8b7/src/api/countervalue.js#L55-L82'>
       <span>src/api/countervalue.js</span>
       </a>
     
@@ -585,7 +625,7 @@
   <div class='clearfix'>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/4dcffe5131b48c9e5b051e6e823d14494ed9794e/src/api/countervalue.js#L87-L103'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/0cbd71b9521a440c68a783f78950668a107bc8b7/src/api/countervalue.js#L87-L103'>
       <span>src/api/countervalue.js</span>
       </a>
     
@@ -668,12 +708,344 @@
   
   <div class='clearfix'>
     
+    <h3 class='fl m0' id='makechunks'>
+      makeChunks
+    </h3>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/0cbd71b9521a440c68a783f78950668a107bc8b7/src/bridgestream/exporter.js#L19-L41'>
+      <span>src/bridgestream/exporter.js</span>
+      </a>
+    
+  </div>
+  
+
+  <p>export data into a chunk of string</p>
+
+
+  <div class='pre p1 fill-light mt0'>makeChunks($0: any): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>></div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>$0</span> <code class='quiet'>(any)</code>
+	    
+          </div>
+          
+          <table class='mt1 mb2 fixed-table h5 col-12'>
+            <colgroup>
+              <col width='30%' />
+              <col width='70%' />
+            </colgroup>
+            <thead>
+              <tr class='bold fill-light'>
+                <th>Name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody class='mt1'>
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>$0.accounts</span> <code class='quiet'>any</code>
+  </td>
+  <td class='break-word'><span></span></td>
+</tr>
+
+
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>$0.exporterName</span> <code class='quiet'>any</code>
+  </td>
+  <td class='break-word'><span></span></td>
+</tr>
+
+
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>$0.exporterVersion</span> <code class='quiet'>any</code>
+  </td>
+  <td class='break-word'><span></span></td>
+</tr>
+
+
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>$0.pad</span> <code class='quiet'>any</code>
+  </td>
+  <td class='break-word'><span></span></td>
+</tr>
+
+
+              
+            </tbody>
+          </table>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>></code>
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='parsechunksreducer'>
+      parseChunksReducer
+    </h3>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/0cbd71b9521a440c68a783f78950668a107bc8b7/src/bridgestream/importer.js#L18-L44'>
+      <span>src/bridgestream/importer.js</span>
+      </a>
+    
+  </div>
+  
+
+  <p>reduce chunks data array to add on more chunk to it</p>
+
+
+  <div class='pre p1 fill-light mt0'>parseChunksReducer(chunks: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;Data>, chunk: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;Data></div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>chunks</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;Data>)</code>
+	    
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>chunk</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+	    
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;Data></code>
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='arechunkscomplete'>
+      areChunksComplete
+    </h3>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/0cbd71b9521a440c68a783f78950668a107bc8b7/src/bridgestream/importer.js#L50-L51'>
+      <span>src/bridgestream/importer.js</span>
+      </a>
+    
+  </div>
+  
+
+  <p>check if the chunks have all been retrieved</p>
+
+
+  <div class='pre p1 fill-light mt0'>areChunksComplete</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>chunks</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;Data>)</code>
+	    
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></code>
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='chunkstoresult'>
+      chunksToResult
+    </h3>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/0cbd71b9521a440c68a783f78950668a107bc8b7/src/bridgestream/importer.js#L57-L89'>
+      <span>src/bridgestream/importer.js</span>
+      </a>
+    
+  </div>
+  
+
+  <p>return final result of the chunks. assuming you have checked <code>areChunksComplete</code></p>
+
+
+  <div class='pre p1 fill-light mt0'>chunksToResult(rawChunks: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;Data>): Result</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>rawChunks</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;Data>)</code>
+	    
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>Result</code>
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
     <h3 class='fl m0' id='datamodel'>
       DataModel
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/4dcffe5131b48c9e5b051e6e823d14494ed9794e/src/DataModel.js#L10-L18'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/0cbd71b9521a440c68a783f78950668a107bc8b7/src/DataModel.js#L10-L18'>
       <span>src/DataModel.js</span>
       </a>
     
@@ -721,7 +1093,7 @@
   <div class='clearfix'>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/4dcffe5131b48c9e5b051e6e823d14494ed9794e/src/DataModel.js#L6-L9'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/0cbd71b9521a440c68a783f78950668a107bc8b7/src/DataModel.js#L6-L9'>
       <span>src/DataModel.js</span>
       </a>
     
@@ -804,7 +1176,7 @@
   <div class='clearfix'>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/4dcffe5131b48c9e5b051e6e823d14494ed9794e/src/DataModel.js#L20-L23'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/0cbd71b9521a440c68a783f78950668a107bc8b7/src/DataModel.js#L20-L23'>
       <span>src/DataModel.js</span>
       </a>
     
@@ -887,7 +1259,7 @@
   <div class='clearfix'>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/4dcffe5131b48c9e5b051e6e823d14494ed9794e/src/DataModel.js#L36-L58'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/0cbd71b9521a440c68a783f78950668a107bc8b7/src/DataModel.js#L36-L58'>
       <span>src/DataModel.js</span>
       </a>
     
@@ -967,7 +1339,7 @@
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/4dcffe5131b48c9e5b051e6e823d14494ed9794e/src/helpers/account.js#L5-L12'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/0cbd71b9521a440c68a783f78950668a107bc8b7/src/helpers/account.js#L5-L12'>
       <span>src/helpers/account.js</span>
       </a>
     
@@ -1015,7 +1387,7 @@
   <div class='clearfix'>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/4dcffe5131b48c9e5b051e6e823d14494ed9794e/src/helpers/account.js#L24-L44'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/0cbd71b9521a440c68a783f78950668a107bc8b7/src/helpers/account.js#L24-L44'>
       <span>src/helpers/account.js</span>
       </a>
     
@@ -1098,7 +1470,7 @@ The last item of the array is the balance available right now.</p>
   <div class='clearfix'>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/4dcffe5131b48c9e5b051e6e823d14494ed9794e/src/helpers/account.js#L52-L81'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/0cbd71b9521a440c68a783f78950668a107bc8b7/src/helpers/account.js#L52-L81'>
       <span>src/helpers/account.js</span>
       </a>
     
@@ -1197,7 +1569,7 @@ NB the last item of the array is actually the current total balance.</p>
   <div class='clearfix'>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/4dcffe5131b48c9e5b051e6e823d14494ed9794e/src/helpers/account.js#L87-L109'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/0cbd71b9521a440c68a783f78950668a107bc8b7/src/helpers/account.js#L87-L109'>
       <span>src/helpers/account.js</span>
       </a>
     
@@ -1278,7 +1650,7 @@ NB the last item of the array is actually the current total balance.</p>
   <div class='clearfix'>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/4dcffe5131b48c9e5b051e6e823d14494ed9794e/src/helpers/account.js#L114-L154'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/0cbd71b9521a440c68a783f78950668a107bc8b7/src/helpers/account.js#L114-L154'>
       <span>src/helpers/account.js</span>
       </a>
     
@@ -1366,7 +1738,7 @@ NB the last item of the array is actually the current total balance.</p>
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/4dcffe5131b48c9e5b051e6e823d14494ed9794e/src/helpers/countervalue.js#L6-L10'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/0cbd71b9521a440c68a783f78950668a107bc8b7/src/helpers/countervalue.js#L6-L10'>
       <span>src/helpers/countervalue.js</span>
       </a>
     
@@ -1414,7 +1786,7 @@ NB the last item of the array is actually the current total balance.</p>
   <div class='clearfix'>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/4dcffe5131b48c9e5b051e6e823d14494ed9794e/src/helpers/countervalue.js#L16-L23'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/0cbd71b9521a440c68a783f78950668a107bc8b7/src/helpers/countervalue.js#L16-L23'>
       <span>src/helpers/countervalue.js</span>
       </a>
     
@@ -1487,7 +1859,7 @@ NB the last item of the array is actually the current total balance.</p>
   <div class='clearfix'>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/4dcffe5131b48c9e5b051e6e823d14494ed9794e/src/helpers/countervalue.js#L31-L39'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/0cbd71b9521a440c68a783f78950668a107bc8b7/src/helpers/countervalue.js#L31-L39'>
       <span>src/helpers/countervalue.js</span>
       </a>
     
@@ -1562,7 +1934,7 @@ NB you still have to sync prices yourself. (later we might embrace future React 
   <div class='clearfix'>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/4dcffe5131b48c9e5b051e6e823d14494ed9794e/src/helpers/countervalue.js#L46-L58'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/0cbd71b9521a440c68a783f78950668a107bc8b7/src/helpers/countervalue.js#L46-L58'>
       <span>src/helpers/countervalue.js</span>
       </a>
     
@@ -1636,7 +2008,7 @@ this allows to goes from a countervalue to the currency value.</p>
   <div class='clearfix'>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/4dcffe5131b48c9e5b051e6e823d14494ed9794e/src/helpers/countervalue.js#L66-L67'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/0cbd71b9521a440c68a783f78950668a107bc8b7/src/helpers/countervalue.js#L66-L67'>
       <span>src/helpers/countervalue.js</span>
       </a>
     
@@ -1712,7 +2084,7 @@ this allows to goes from a countervalue to the currency value.</p>
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/4dcffe5131b48c9e5b051e6e823d14494ed9794e/src/mock/account.js#L5-L5'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/0cbd71b9521a440c68a783f78950668a107bc8b7/src/mock/account.js#L5-L5'>
       <span>src/mock/account.js</span>
       </a>
     
@@ -1760,7 +2132,7 @@ this allows to goes from a countervalue to the currency value.</p>
   <div class='clearfix'>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/4dcffe5131b48c9e5b051e6e823d14494ed9794e/src/mock/account.js#L15-L18'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/0cbd71b9521a440c68a783f78950668a107bc8b7/src/mock/account.js#L15-L18'>
       <span>src/mock/account.js</span>
       </a>
     
@@ -1827,7 +2199,7 @@ this allows to goes from a countervalue to the currency value.</p>
   <div class='clearfix'>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/4dcffe5131b48c9e5b051e6e823d14494ed9794e/src/mock/account.js#L23-L25'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/0cbd71b9521a440c68a783f78950668a107bc8b7/src/mock/account.js#L23-L25'>
       <span>src/mock/account.js</span>
       </a>
     
@@ -1902,7 +2274,7 @@ this allows to goes from a countervalue to the currency value.</p>
   <div class='clearfix'>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/4dcffe5131b48c9e5b051e6e823d14494ed9794e/src/mock/account.js#L30-L35'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/0cbd71b9521a440c68a783f78950668a107bc8b7/src/mock/account.js#L30-L35'>
       <span>src/mock/account.js</span>
       </a>
     
@@ -1977,7 +2349,7 @@ this allows to goes from a countervalue to the currency value.</p>
   <div class='clearfix'>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/4dcffe5131b48c9e5b051e6e823d14494ed9794e/src/mock/account.js#L41-L67'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/0cbd71b9521a440c68a783f78950668a107bc8b7/src/mock/account.js#L41-L67'>
       <span>src/mock/account.js</span>
       </a>
     
@@ -2073,7 +2445,7 @@ this allows to goes from a countervalue to the currency value.</p>
   <div class='clearfix'>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/4dcffe5131b48c9e5b051e6e823d14494ed9794e/src/mock/account.js#L72-L87'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/0cbd71b9521a440c68a783f78950668a107bc8b7/src/mock/account.js#L72-L87'>
       <span>src/mock/account.js</span>
       </a>
     
@@ -2161,7 +2533,7 @@ this allows to goes from a countervalue to the currency value.</p>
   <div class='clearfix'>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/4dcffe5131b48c9e5b051e6e823d14494ed9794e/src/mock/account.js#L93-L127'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/0cbd71b9521a440c68a783f78950668a107bc8b7/src/mock/account.js#L93-L127'>
       <span>src/mock/account.js</span>
       </a>
     
@@ -2242,7 +2614,7 @@ this allows to goes from a countervalue to the currency value.</p>
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/4dcffe5131b48c9e5b051e6e823d14494ed9794e/src/models/account.js#L5-L5'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/0cbd71b9521a440c68a783f78950668a107bc8b7/src/models/account.js#L5-L5'>
       <span>src/models/account.js</span>
       </a>
     
@@ -2290,7 +2662,7 @@ this allows to goes from a countervalue to the currency value.</p>
   <div class='clearfix'>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/4dcffe5131b48c9e5b051e6e823d14494ed9794e/src/models/account.js#L13-L17'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/0cbd71b9521a440c68a783f78950668a107bc8b7/src/models/account.js#L13-L17'>
       <span>src/models/account.js</span>
       </a>
     
@@ -2365,7 +2737,7 @@ this allows to goes from a countervalue to the currency value.</p>
   <div class='clearfix'>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/4dcffe5131b48c9e5b051e6e823d14494ed9794e/src/models/account.js#L27-L72'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/0cbd71b9521a440c68a783f78950668a107bc8b7/src/models/account.js#L27-L72'>
       <span>src/models/account.js</span>
       </a>
     
@@ -2455,7 +2827,7 @@ this allows to goes from a countervalue to the currency value.</p>
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/4dcffe5131b48c9e5b051e6e823d14494ed9794e/src/types/account.js#L7-L12'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/0cbd71b9521a440c68a783f78950668a107bc8b7/src/types/account.js#L7-L12'>
       <span>src/types/account.js</span>
       </a>
     
@@ -2620,7 +2992,7 @@ this allows to goes from a countervalue to the currency value.</p>
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/4dcffe5131b48c9e5b051e6e823d14494ed9794e/src/types/index.js#L18-L18'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/0cbd71b9521a440c68a783f78950668a107bc8b7/src/types/index.js#L18-L18'>
       <span>src/types/index.js</span>
       </a>
     
@@ -2676,7 +3048,7 @@ this allows to goes from a countervalue to the currency value.</p>
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/4dcffe5131b48c9e5b051e6e823d14494ed9794e/src/types/index.js#L27-L30'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/0cbd71b9521a440c68a783f78950668a107bc8b7/src/types/index.js#L27-L30'>
       <span>src/types/index.js</span>
       </a>
     
@@ -2749,7 +3121,7 @@ this allows to goes from a countervalue to the currency value.</p>
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/4dcffe5131b48c9e5b051e6e823d14494ed9794e/src/types/index.js#L37-L40'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/0cbd71b9521a440c68a783f78950668a107bc8b7/src/types/index.js#L37-L40'>
       <span>src/types/index.js</span>
       </a>
     
@@ -2806,7 +3178,7 @@ e.g. CounterValuesPairing<number> can be { BTC: { USD: 1 } }</p>
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/4dcffe5131b48c9e5b051e6e823d14494ed9794e/src/types/index.js#L49-L55'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/0cbd71b9521a440c68a783f78950668a107bc8b7/src/types/index.js#L49-L59'>
       <span>src/types/index.js</span>
       </a>
     
@@ -2817,7 +3189,8 @@ e.g. CounterValuesPairing<number> can be { BTC: { USD: 1 } }</p>
 the returned countervalue is expressed in satoshis per cents so it can be multiplied by the value to convert.
 if Date is falsy, the current "latest" price is to be returned.
 the value 0 or any falsy returned value is means the countervalue is not available.
-It it up to GetPairHistory implementation to chose the date granularity to use.</p>
+It it up to GetPairHistory implementation to chose the date granularity to use.
+NB Ideally a get pair history implementation should fallback on 0 if before the timerange he knows, or "latest" after the timerange it knows</p>
 
 
   <div class='pre p1 fill-light mt0'>GetPairHistory</div>
@@ -2845,6 +3218,13 @@ It it up to GetPairHistory implementation to chose the date granularity to use.<
   
 
   
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'>&lt;any date before&gt;    <span class="hljs-number">2018</span><span class="hljs-number">-03</span><span class="hljs-number">-01</span>  <span class="hljs-number">2018</span><span class="hljs-number">-03</span><span class="hljs-number">-02</span>  <span class="hljs-number">2018</span><span class="hljs-number">-03</span><span class="hljs-number">-03</span>  &lt;any date after&gt;
+<span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span>       <span class="hljs-number">9.65</span>         <span class="hljs-number">9.22</span>      <span class="hljs-number">8.77</span>      latest latest latest ...</pre>
+    
+  
 
   
 
@@ -2866,7 +3246,7 @@ It it up to GetPairHistory implementation to chose the date granularity to use.<
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/4dcffe5131b48c9e5b051e6e823d14494ed9794e/src/types/index.js#L61-L64'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/0cbd71b9521a440c68a783f78950668a107bc8b7/src/types/index.js#L65-L68'>
       <span>src/types/index.js</span>
       </a>
     
@@ -2923,7 +3303,7 @@ if date is not provided (falsy), Calc will return the "latest" countervalue</p>
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/4dcffe5131b48c9e5b051e6e823d14494ed9794e/src/types/operation.js#L3-L8'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/0cbd71b9521a440c68a783f78950668a107bc8b7/src/types/operation.js#L3-L8'>
       <span>src/types/operation.js</span>
       </a>
     
