@@ -37,21 +37,15 @@
                     <li class='h5'><span>Static members</span></li>
                     
                       <li><a
-                        href='#apicountervaluefetchcurrentcountervalues'
+                        href='#apicountervaluefetchcurrentrates'
                         class='regular pre-open'>
-                        .fetchCurrentCounterValues
+                        .fetchCurrentRates
                       </a></li>
                     
                       <li><a
-                        href='#apicountervaluefetchhistodaycountervalues'
+                        href='#apicountervaluefetchhistodayrates'
                         class='regular pre-open'>
-                        .fetchHistodayCounterValues
-                      </a></li>
-                    
-                      <li><a
-                        href='#apicountervaluefetchhistodaycountervaluesmultiple'
-                        class='regular pre-open'>
-                        .fetchHistodayCounterValuesMultiple
+                        .fetchHistodayRates
                       </a></li>
                     
                     </ul>
@@ -60,6 +54,16 @@
                   
                   
                 </div>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#getlatestdayavailable'
+                  class="">
+                  getLatestDayAvailable
+                  
+                </a>
                 
                 </li>
               
@@ -203,9 +207,9 @@
                     <li class='h5'><span>Static members</span></li>
                     
                       <li><a
-                        href='#helperscountervaluemakegetcountervalue'
+                        href='#helperscountervaluemakegetcountervaluerate'
                         class='regular pre-open'>
-                        .makeGetCounterValue
+                        .makeGetCounterValueRate
                       </a></li>
                     
                       <li><a
@@ -221,9 +225,21 @@
                       </a></li>
                     
                       <li><a
+                        href='#helperscountervaluevaluefromunit'
+                        class='regular pre-open'>
+                        .valueFromUnit
+                      </a></li>
+                    
+                      <li><a
                         href='#helperscountervalueformatcountervalueday'
                         class='regular pre-open'>
                         .formatCounterValueDay
+                      </a></li>
+                    
+                      <li><a
+                        href='#helperscountervalueformatcountervaluedayutc'
+                        class='regular pre-open'>
+                        .formatCounterValueDayUTC
                       </a></li>
                     
                     </ul>
@@ -369,9 +385,9 @@
               
                 
                 <li><a
-                  href='#getpairhistory'
+                  href='#getpairrate'
                   class="">
-                  GetPairHistory
+                  GetPairRate
                   
                 </a>
                 
@@ -382,6 +398,26 @@
                   href='#calc'
                   class="">
                   Calc
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#calculatecountervalue'
+                  class="">
+                  CalculateCounterValue
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#getcountervaluerate'
+                  class="">
+                  GetCounterValueRate
                   
                 </a>
                 
@@ -417,7 +453,7 @@
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/0cbd71b9521a440c68a783f78950668a107bc8b7/src/api/countervalue.js#L5-L5'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/196aa440ce756bcbc155e64069ec21a93512cb99/src/api/countervalue.js#L5-L5'>
       <span>src/api/countervalue.js</span>
       </a>
     
@@ -451,11 +487,11 @@
     <div class='py1 quiet mt1 prose-big'>Static Members</div>
     <div class="clearfix">
   
-    <div class='border-bottom' id='apicountervaluefetchcurrentcountervalues'>
+    <div class='border-bottom' id='apicountervaluefetchcurrentrates'>
       <div class="clearfix small pointer toggle-sibling">
         <div class="py1 contain">
             <a class='icon pin-right py1 dark-link caret-right'>▸</a>
-            <span class='code strong strong truncate'>fetchCurrentCounterValues(currencies, fiatUnit)</span>
+            <span class='code strong strong truncate'>fetchCurrentRates(currencies, fiatUnit)</span>
         </div>
       </div>
       <div class="clearfix display-none toggle-target">
@@ -465,7 +501,7 @@
   <div class='clearfix'>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/0cbd71b9521a440c68a783f78950668a107bc8b7/src/api/countervalue.js#L19-L50'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/196aa440ce756bcbc155e64069ec21a93512cb99/src/api/countervalue.js#L20-L51'>
       <span>src/api/countervalue.js</span>
       </a>
     
@@ -474,7 +510,7 @@
 
   
 
-  <div class='pre p1 fill-light mt0'>fetchCurrentCounterValues(currencies: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;Currency>, fiatUnit: Unit): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&#x3C;<a href="#countervaluespairing">CounterValuesPairing</a>&#x3C;{latest: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>}>></div>
+  <div class='pre p1 fill-light mt0'>fetchCurrentRates(currencies: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;Currency>, fiatUnit: Unit): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&#x3C;<a href="#countervaluespairing">CounterValuesPairing</a>&#x3C;{latest: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>}>></div>
   
   
 
@@ -531,11 +567,11 @@
       </div>
     </div>
   
-    <div class='border-bottom' id='apicountervaluefetchhistodaycountervalues'>
+    <div class='border-bottom' id='apicountervaluefetchhistodayrates'>
       <div class="clearfix small pointer toggle-sibling">
         <div class="py1 contain">
             <a class='icon pin-right py1 dark-link caret-right'>▸</a>
-            <span class='code strong strong truncate'>fetchHistodayCounterValues(currency, fiatUnit)</span>
+            <span class='code strong strong truncate'>fetchHistodayRates(currencyOrCurrencies, fiatUnit, getLatestDayFetched)</span>
         </div>
       </div>
       <div class="clearfix display-none toggle-target">
@@ -545,16 +581,18 @@
   <div class='clearfix'>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/0cbd71b9521a440c68a783f78950668a107bc8b7/src/api/countervalue.js#L55-L82'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/196aa440ce756bcbc155e64069ec21a93512cb99/src/api/countervalue.js#L76-L128'>
       <span>src/api/countervalue.js</span>
       </a>
     
   </div>
   
 
-  
+  <p>Fetch countervalue rates history for crypto currencies (or a currency)
+per day granularity.</p>
 
-  <div class='pre p1 fill-light mt0'>fetchHistodayCounterValues(currency: Currency, fiatUnit: Unit): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&#x3C;Histoday></div>
+
+  <div class='pre p1 fill-light mt0'>fetchHistodayRates(currencyOrCurrencies: (Currency | <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;Currency>), fiatUnit: Unit, getLatestDayFetched: function (Currency): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>?): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&#x3C;<a href="#countervaluespairing">CounterValuesPairing</a>&#x3C;Histoday>></div>
   
   
 
@@ -571,7 +609,7 @@
       
         <div class='space-bottom0'>
           <div>
-            <span class='code bold'>currency</span> <code class='quiet'>(Currency)</code>
+            <span class='code bold'>currencyOrCurrencies</span> <code class='quiet'>((Currency | <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;Currency>))</code>
 	    
           </div>
           
@@ -585,82 +623,20 @@
           
         </div>
       
-    </div>
-  
-
-  
-
-  
-    
-      <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&#x3C;Histoday></code>
-    
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-</section>
-
-      </div>
-    </div>
-  
-    <div class='border-bottom' id='apicountervaluefetchhistodaycountervaluesmultiple'>
-      <div class="clearfix small pointer toggle-sibling">
-        <div class="py1 contain">
-            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
-            <span class='code strong strong truncate'>fetchHistodayCounterValuesMultiple(currencies, fiatUnit)</span>
-        </div>
-      </div>
-      <div class="clearfix display-none toggle-target">
-        <section class='p2 mb2 clearfix bg-white minishadow'>
-
-  
-  <div class='clearfix'>
-    
-    
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/0cbd71b9521a440c68a783f78950668a107bc8b7/src/api/countervalue.js#L87-L103'>
-      <span>src/api/countervalue.js</span>
-      </a>
-    
-  </div>
-  
-
-  
-
-  <div class='pre p1 fill-light mt0'>fetchHistodayCounterValuesMultiple(currencies: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;Currency>, fiatUnit: Unit): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&#x3C;<a href="#countervaluespairing">CounterValuesPairing</a>&#x3C;Histoday>></div>
-  
-  
-
-  
-  
-  
-  
-  
-  
-
-  
-    <div class='py1 quiet mt1 prose-big'>Parameters</div>
-    <div class='prose'>
-      
         <div class='space-bottom0'>
           <div>
-            <span class='code bold'>currencies</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;Currency>)</code>
-	    
-          </div>
-          
-        </div>
-      
-        <div class='space-bottom0'>
-          <div>
-            <span class='code bold'>fiatUnit</span> <code class='quiet'>(Unit)</code>
-	    
+            <span class='code bold'>getLatestDayFetched</span> <code class='quiet'>(function (Currency): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>?)</code>
+	    will returns for a currency the latest day that
+is already loaded and don't need to be refreshed.
+It returns this in YYYY-MM-DD format.
+If data was never loaded OR all data needs to be refetched,
+you can return a falsy value.
+NOTE: This allow implementation to do two things:
+<ul>
+<li>don't fetch anything if current day is the latest</li>
+<li>only fetch part of the data that are missing (patch)</li>
+</ul>
+
           </div>
           
         </div>
@@ -673,7 +649,10 @@
   
     
       <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&#x3C;<a href="#countervaluespairing">CounterValuesPairing</a>&#x3C;Histoday>></code>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&#x3C;<a href="#countervaluespairing">CounterValuesPairing</a>&#x3C;Histoday>></code>:
+        a subset of pairs with only the new data (regarding getLatestDayFetched)
+
+      
     
   
 
@@ -708,12 +687,71 @@
   
   <div class='clearfix'>
     
+    <h3 class='fl m0' id='getlatestdayavailable'>
+      getLatestDayAvailable
+    </h3>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/196aa440ce756bcbc155e64069ec21a93512cb99/src/api/countervalue.js#L57-L60'>
+      <span>src/api/countervalue.js</span>
+      </a>
+    
+  </div>
+  
+
+  
+
+  <div class='pre p1 fill-light mt0'>getLatestDayAvailable(): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></code>:
+        the latest day available on the server in YYYY-MM-DD format
+NB this is not so trivial because this needs to use same timezone as the server
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
     <h3 class='fl m0' id='makechunks'>
       makeChunks
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/0cbd71b9521a440c68a783f78950668a107bc8b7/src/bridgestream/exporter.js#L19-L41'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/196aa440ce756bcbc155e64069ec21a93512cb99/src/bridgestream/exporter.js#L19-L41'>
       <span>src/bridgestream/exporter.js</span>
       </a>
     
@@ -830,7 +868,7 @@
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/0cbd71b9521a440c68a783f78950668a107bc8b7/src/bridgestream/importer.js#L18-L44'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/196aa440ce756bcbc155e64069ec21a93512cb99/src/bridgestream/importer.js#L18-L44'>
       <span>src/bridgestream/importer.js</span>
       </a>
     
@@ -907,7 +945,7 @@
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/0cbd71b9521a440c68a783f78950668a107bc8b7/src/bridgestream/importer.js#L50-L51'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/196aa440ce756bcbc155e64069ec21a93512cb99/src/bridgestream/importer.js#L50-L51'>
       <span>src/bridgestream/importer.js</span>
       </a>
     
@@ -976,7 +1014,7 @@
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/0cbd71b9521a440c68a783f78950668a107bc8b7/src/bridgestream/importer.js#L57-L89'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/196aa440ce756bcbc155e64069ec21a93512cb99/src/bridgestream/importer.js#L57-L89'>
       <span>src/bridgestream/importer.js</span>
       </a>
     
@@ -1045,7 +1083,7 @@
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/0cbd71b9521a440c68a783f78950668a107bc8b7/src/DataModel.js#L10-L18'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/196aa440ce756bcbc155e64069ec21a93512cb99/src/DataModel.js#L10-L18'>
       <span>src/DataModel.js</span>
       </a>
     
@@ -1093,7 +1131,7 @@
   <div class='clearfix'>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/0cbd71b9521a440c68a783f78950668a107bc8b7/src/DataModel.js#L6-L9'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/196aa440ce756bcbc155e64069ec21a93512cb99/src/DataModel.js#L6-L9'>
       <span>src/DataModel.js</span>
       </a>
     
@@ -1176,7 +1214,7 @@
   <div class='clearfix'>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/0cbd71b9521a440c68a783f78950668a107bc8b7/src/DataModel.js#L20-L23'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/196aa440ce756bcbc155e64069ec21a93512cb99/src/DataModel.js#L20-L23'>
       <span>src/DataModel.js</span>
       </a>
     
@@ -1259,7 +1297,7 @@
   <div class='clearfix'>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/0cbd71b9521a440c68a783f78950668a107bc8b7/src/DataModel.js#L36-L58'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/196aa440ce756bcbc155e64069ec21a93512cb99/src/DataModel.js#L36-L58'>
       <span>src/DataModel.js</span>
       </a>
     
@@ -1339,7 +1377,7 @@
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/0cbd71b9521a440c68a783f78950668a107bc8b7/src/helpers/account.js#L5-L12'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/196aa440ce756bcbc155e64069ec21a93512cb99/src/helpers/account.js#L5-L12'>
       <span>src/helpers/account.js</span>
       </a>
     
@@ -1387,7 +1425,7 @@
   <div class='clearfix'>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/0cbd71b9521a440c68a783f78950668a107bc8b7/src/helpers/account.js#L24-L44'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/196aa440ce756bcbc155e64069ec21a93512cb99/src/helpers/account.js#L24-L44'>
       <span>src/helpers/account.js</span>
       </a>
     
@@ -1470,7 +1508,7 @@ The last item of the array is the balance available right now.</p>
   <div class='clearfix'>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/0cbd71b9521a440c68a783f78950668a107bc8b7/src/helpers/account.js#L52-L81'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/196aa440ce756bcbc155e64069ec21a93512cb99/src/helpers/account.js#L52-L81'>
       <span>src/helpers/account.js</span>
       </a>
     
@@ -1482,7 +1520,7 @@ and using a CalculateCounterValue function (see countervalue helper)
 NB the last item of the array is actually the current total balance.</p>
 
 
-  <div class='pre p1 fill-light mt0'>getBalanceHistorySum(accounts: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;Account>, daysCount: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>, fiatUnit: Unit, calculateCounterValue: CalculateCounterValue): BalanceHistory</div>
+  <div class='pre p1 fill-light mt0'>getBalanceHistorySum(accounts: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;Account>, daysCount: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>, fiatUnit: Unit, calculateCounterValue: <a href="#calculatecountervalue">CalculateCounterValue</a>): BalanceHistory</div>
   
   
 
@@ -1523,7 +1561,7 @@ NB the last item of the array is actually the current total balance.</p>
       
         <div class='space-bottom0'>
           <div>
-            <span class='code bold'>calculateCounterValue</span> <code class='quiet'>(CalculateCounterValue)</code>
+            <span class='code bold'>calculateCounterValue</span> <code class='quiet'>(<a href="#calculatecountervalue">CalculateCounterValue</a>)</code>
 	    
           </div>
           
@@ -1569,7 +1607,7 @@ NB the last item of the array is actually the current total balance.</p>
   <div class='clearfix'>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/0cbd71b9521a440c68a783f78950668a107bc8b7/src/helpers/account.js#L87-L109'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/196aa440ce756bcbc155e64069ec21a93512cb99/src/helpers/account.js#L87-L109'>
       <span>src/helpers/account.js</span>
       </a>
     
@@ -1650,7 +1688,7 @@ NB the last item of the array is actually the current total balance.</p>
   <div class='clearfix'>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/0cbd71b9521a440c68a783f78950668a107bc8b7/src/helpers/account.js#L114-L154'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/196aa440ce756bcbc155e64069ec21a93512cb99/src/helpers/account.js#L114-L154'>
       <span>src/helpers/account.js</span>
       </a>
     
@@ -1738,7 +1776,7 @@ NB the last item of the array is actually the current total balance.</p>
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/0cbd71b9521a440c68a783f78950668a107bc8b7/src/helpers/countervalue.js#L6-L10'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/196aa440ce756bcbc155e64069ec21a93512cb99/src/helpers/countervalue.js#L6-L6'>
       <span>src/helpers/countervalue.js</span>
       </a>
     
@@ -1772,11 +1810,11 @@ NB the last item of the array is actually the current total balance.</p>
     <div class='py1 quiet mt1 prose-big'>Static Members</div>
     <div class="clearfix">
   
-    <div class='border-bottom' id='helperscountervaluemakegetcountervalue'>
+    <div class='border-bottom' id='helperscountervaluemakegetcountervaluerate'>
       <div class="clearfix small pointer toggle-sibling">
         <div class="py1 contain">
             <a class='icon pin-right py1 dark-link caret-right'>▸</a>
-            <span class='code strong strong truncate'>makeGetCounterValue</span>
+            <span class='code strong strong truncate'>makeGetCounterValueRate</span>
         </div>
       </div>
       <div class="clearfix display-none toggle-target">
@@ -1786,17 +1824,17 @@ NB the last item of the array is actually the current total balance.</p>
   <div class='clearfix'>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/0cbd71b9521a440c68a783f78950668a107bc8b7/src/helpers/countervalue.js#L16-L23'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/196aa440ce756bcbc155e64069ec21a93512cb99/src/helpers/countervalue.js#L19-L26'>
       <span>src/helpers/countervalue.js</span>
       </a>
     
   </div>
   
 
-  <p>get the countervalue rate with a GetPairHistory.</p>
+  <p>get the countervalue rate with a GetPairRate.</p>
 
 
-  <div class='pre p1 fill-light mt0'>makeGetCounterValue</div>
+  <div class='pre p1 fill-light mt0'>makeGetCounterValueRate</div>
   
   
 
@@ -1813,7 +1851,7 @@ NB the last item of the array is actually the current total balance.</p>
       
         <div class='space-bottom0'>
           <div>
-            <span class='code bold'>getPairHistory</span> <code class='quiet'>(<a href="#getpairhistory">GetPairHistory</a>)</code>
+            <span class='code bold'>getPairHistory</span> <code class='quiet'>(<a href="#getpairrate">GetPairRate</a>)</code>
 	    
           </div>
           
@@ -1827,7 +1865,10 @@ NB the last item of the array is actually the current total balance.</p>
   
     
       <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code>GetCounterValue</code>
+      <code><a href="#getcountervaluerate">GetCounterValueRate</a></code>:
+        a normalized cent per satoshis rate
+
+      
     
   
 
@@ -1859,16 +1900,16 @@ NB the last item of the array is actually the current total balance.</p>
   <div class='clearfix'>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/0cbd71b9521a440c68a783f78950668a107bc8b7/src/helpers/countervalue.js#L31-L39'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/196aa440ce756bcbc155e64069ec21a93512cb99/src/helpers/countervalue.js#L34-L45'>
       <span>src/helpers/countervalue.js</span>
       </a>
     
   </div>
   
 
-  <p>creates a CalculateCounterValue utility with a GetPairHistory.
+  <p>creates a CalculateCounterValue utility with a GetPairRate.
 This can be plugged on a redux store.
-NB you still have to sync prices yourself. (later we might embrace future React suspense idea in GetPairHistory)</p>
+NB you still have to sync prices yourself. (later we might embrace future React suspense idea in GetPairRate)</p>
 
 
   <div class='pre p1 fill-light mt0'>makeCalculateCounterValue</div>
@@ -1888,7 +1929,7 @@ NB you still have to sync prices yourself. (later we might embrace future React 
       
         <div class='space-bottom0'>
           <div>
-            <span class='code bold'>getPairHistory</span> <code class='quiet'>(<a href="#getpairhistory">GetPairHistory</a>)</code>
+            <span class='code bold'>getPairHistory</span> <code class='quiet'>(<a href="#getpairrate">GetPairRate</a>)</code>
 	    
           </div>
           
@@ -1902,7 +1943,7 @@ NB you still have to sync prices yourself. (later we might embrace future React 
   
     
       <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code>CalculateCounterValue</code>
+      <code><a href="#calculatecountervalue">CalculateCounterValue</a></code>
     
   
 
@@ -1934,7 +1975,7 @@ NB you still have to sync prices yourself. (later we might embrace future React 
   <div class='clearfix'>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/0cbd71b9521a440c68a783f78950668a107bc8b7/src/helpers/countervalue.js#L46-L58'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/196aa440ce756bcbc155e64069ec21a93512cb99/src/helpers/countervalue.js#L52-L64'>
       <span>src/helpers/countervalue.js</span>
       </a>
     
@@ -1962,7 +2003,7 @@ this allows to goes from a countervalue to the currency value.</p>
       
         <div class='space-bottom0'>
           <div>
-            <span class='code bold'>getPairHistory</span> <code class='quiet'>(<a href="#getpairhistory">GetPairHistory</a>)</code>
+            <span class='code bold'>getPairHistory</span> <code class='quiet'>(<a href="#getpairrate">GetPairRate</a>)</code>
 	    
           </div>
           
@@ -1976,8 +2017,85 @@ this allows to goes from a countervalue to the currency value.</p>
   
     
       <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code>CalculateCounterValue</code>
+      <code><a href="#calculatecountervalue">CalculateCounterValue</a></code>
     
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+    <div class='border-bottom' id='helperscountervaluevaluefromunit'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>valueFromUnit</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/196aa440ce756bcbc155e64069ec21a93512cb99/src/helpers/countervalue.js#L73-L74'>
+      <span>src/helpers/countervalue.js</span>
+      </a>
+    
+  </div>
+  
+
+  <p>convert a value in a given unit to a normalized value
+For instance, for 1 BTC, valueFromUnit(1, btcUnit) returns 100000000</p>
+
+
+  <div class='pre p1 fill-light mt0'>valueFromUnit</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>valueInUnit</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
+	    
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>unit</span> <code class='quiet'>(Unit)</code>
+	    
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
   
 
   
@@ -2008,7 +2126,7 @@ this allows to goes from a countervalue to the currency value.</p>
   <div class='clearfix'>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/0cbd71b9521a440c68a783f78950668a107bc8b7/src/helpers/countervalue.js#L66-L67'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/196aa440ce756bcbc155e64069ec21a93512cb99/src/helpers/countervalue.js#L80-L81'>
       <span>src/helpers/countervalue.js</span>
       </a>
     
@@ -2019,6 +2137,74 @@ this allows to goes from a countervalue to the currency value.</p>
 
 
   <div class='pre p1 fill-light mt0'>formatCounterValueDay</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>d</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Date">Date</a>)</code>
+	    
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+    <div class='border-bottom' id='helperscountervalueformatcountervaluedayutc'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>formatCounterValueDayUTC</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/196aa440ce756bcbc155e64069ec21a93512cb99/src/helpers/countervalue.js#L87-L90'>
+      <span>src/helpers/countervalue.js</span>
+      </a>
+    
+  </div>
+  
+
+  <p>UTC version of formatCounterValueDay</p>
+
+
+  <div class='pre p1 fill-light mt0'>formatCounterValueDayUTC</div>
   
   
 
@@ -2084,7 +2270,7 @@ this allows to goes from a countervalue to the currency value.</p>
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/0cbd71b9521a440c68a783f78950668a107bc8b7/src/mock/account.js#L5-L5'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/196aa440ce756bcbc155e64069ec21a93512cb99/src/mock/account.js#L5-L5'>
       <span>src/mock/account.js</span>
       </a>
     
@@ -2132,7 +2318,7 @@ this allows to goes from a countervalue to the currency value.</p>
   <div class='clearfix'>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/0cbd71b9521a440c68a783f78950668a107bc8b7/src/mock/account.js#L15-L18'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/196aa440ce756bcbc155e64069ec21a93512cb99/src/mock/account.js#L15-L18'>
       <span>src/mock/account.js</span>
       </a>
     
@@ -2199,7 +2385,7 @@ this allows to goes from a countervalue to the currency value.</p>
   <div class='clearfix'>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/0cbd71b9521a440c68a783f78950668a107bc8b7/src/mock/account.js#L23-L25'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/196aa440ce756bcbc155e64069ec21a93512cb99/src/mock/account.js#L23-L25'>
       <span>src/mock/account.js</span>
       </a>
     
@@ -2274,7 +2460,7 @@ this allows to goes from a countervalue to the currency value.</p>
   <div class='clearfix'>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/0cbd71b9521a440c68a783f78950668a107bc8b7/src/mock/account.js#L30-L35'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/196aa440ce756bcbc155e64069ec21a93512cb99/src/mock/account.js#L30-L35'>
       <span>src/mock/account.js</span>
       </a>
     
@@ -2349,7 +2535,7 @@ this allows to goes from a countervalue to the currency value.</p>
   <div class='clearfix'>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/0cbd71b9521a440c68a783f78950668a107bc8b7/src/mock/account.js#L41-L67'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/196aa440ce756bcbc155e64069ec21a93512cb99/src/mock/account.js#L41-L67'>
       <span>src/mock/account.js</span>
       </a>
     
@@ -2445,7 +2631,7 @@ this allows to goes from a countervalue to the currency value.</p>
   <div class='clearfix'>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/0cbd71b9521a440c68a783f78950668a107bc8b7/src/mock/account.js#L72-L87'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/196aa440ce756bcbc155e64069ec21a93512cb99/src/mock/account.js#L72-L87'>
       <span>src/mock/account.js</span>
       </a>
     
@@ -2533,7 +2719,7 @@ this allows to goes from a countervalue to the currency value.</p>
   <div class='clearfix'>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/0cbd71b9521a440c68a783f78950668a107bc8b7/src/mock/account.js#L93-L127'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/196aa440ce756bcbc155e64069ec21a93512cb99/src/mock/account.js#L93-L127'>
       <span>src/mock/account.js</span>
       </a>
     
@@ -2614,7 +2800,7 @@ this allows to goes from a countervalue to the currency value.</p>
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/0cbd71b9521a440c68a783f78950668a107bc8b7/src/models/account.js#L5-L5'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/196aa440ce756bcbc155e64069ec21a93512cb99/src/models/account.js#L5-L5'>
       <span>src/models/account.js</span>
       </a>
     
@@ -2662,7 +2848,7 @@ this allows to goes from a countervalue to the currency value.</p>
   <div class='clearfix'>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/0cbd71b9521a440c68a783f78950668a107bc8b7/src/models/account.js#L13-L17'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/196aa440ce756bcbc155e64069ec21a93512cb99/src/models/account.js#L13-L17'>
       <span>src/models/account.js</span>
       </a>
     
@@ -2737,7 +2923,7 @@ this allows to goes from a countervalue to the currency value.</p>
   <div class='clearfix'>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/0cbd71b9521a440c68a783f78950668a107bc8b7/src/models/account.js#L27-L72'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/196aa440ce756bcbc155e64069ec21a93512cb99/src/models/account.js#L27-L72'>
       <span>src/models/account.js</span>
       </a>
     
@@ -2827,7 +3013,7 @@ this allows to goes from a countervalue to the currency value.</p>
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/0cbd71b9521a440c68a783f78950668a107bc8b7/src/types/account.js#L7-L12'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/196aa440ce756bcbc155e64069ec21a93512cb99/src/types/account.js#L7-L12'>
       <span>src/types/account.js</span>
       </a>
     
@@ -2992,7 +3178,7 @@ this allows to goes from a countervalue to the currency value.</p>
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/0cbd71b9521a440c68a783f78950668a107bc8b7/src/types/index.js#L18-L18'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/196aa440ce756bcbc155e64069ec21a93512cb99/src/types/index.js#L18-L18'>
       <span>src/types/index.js</span>
       </a>
     
@@ -3048,7 +3234,7 @@ this allows to goes from a countervalue to the currency value.</p>
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/0cbd71b9521a440c68a783f78950668a107bc8b7/src/types/index.js#L27-L30'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/196aa440ce756bcbc155e64069ec21a93512cb99/src/types/index.js#L27-L30'>
       <span>src/types/index.js</span>
       </a>
     
@@ -3121,7 +3307,7 @@ this allows to goes from a countervalue to the currency value.</p>
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/0cbd71b9521a440c68a783f78950668a107bc8b7/src/types/index.js#L37-L40'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/196aa440ce756bcbc155e64069ec21a93512cb99/src/types/index.js#L37-L40'>
       <span>src/types/index.js</span>
       </a>
     
@@ -3173,12 +3359,12 @@ e.g. CounterValuesPairing<number> can be { BTC: { USD: 1 } }</p>
   
   <div class='clearfix'>
     
-    <h3 class='fl m0' id='getpairhistory'>
-      GetPairHistory
+    <h3 class='fl m0' id='getpairrate'>
+      GetPairRate
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/0cbd71b9521a440c68a783f78950668a107bc8b7/src/types/index.js#L49-L59'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/196aa440ce756bcbc155e64069ec21a93512cb99/src/types/index.js#L49-L59'>
       <span>src/types/index.js</span>
       </a>
     
@@ -3193,7 +3379,7 @@ It it up to GetPairHistory implementation to chose the date granularity to use.
 NB Ideally a get pair history implementation should fallback on 0 if before the timerange he knows, or "latest" after the timerange it knows</p>
 
 
-  <div class='pre p1 fill-light mt0'>GetPairHistory</div>
+  <div class='pre p1 fill-light mt0'>GetPairRate</div>
   
     <p>
       Type:
@@ -3246,7 +3432,7 @@ NB Ideally a get pair history implementation should fallback on 0 if before the 
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/0cbd71b9521a440c68a783f78950668a107bc8b7/src/types/index.js#L65-L68'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/196aa440ce756bcbc155e64069ec21a93512cb99/src/types/index.js#L65-L68'>
       <span>src/types/index.js</span>
       </a>
     
@@ -3261,7 +3447,117 @@ if date is not provided (falsy), Calc will return the "latest" countervalue</p>
   
     <p>
       Type:
-      function (value: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>, date: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Date">Date</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+      function (value: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>, date: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Date">Date</a>, disableRounding: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+    </p>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='calculatecountervalue'>
+      CalculateCounterValue
+    </h3>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/196aa440ce756bcbc155e64069ec21a93512cb99/src/types/index.js#L75-L76'>
+      <span>src/types/index.js</span>
+      </a>
+    
+  </div>
+  
+
+  
+
+  <div class='pre p1 fill-light mt0'>CalculateCounterValue</div>
+  
+    <p>
+      Type:
+      function (cur: Currency, fiat: Unit): <a href="#calc">Calc</a>
+    </p>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='getcountervaluerate'>
+      GetCounterValueRate
+    </h3>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/196aa440ce756bcbc155e64069ec21a93512cb99/src/types/index.js#L79-L80'>
+      <span>src/types/index.js</span>
+      </a>
+    
+  </div>
+  
+
+  
+
+  <div class='pre p1 fill-light mt0'>GetCounterValueRate</div>
+  
+    <p>
+      Type:
+      function (cur: Currency, fiat: Unit): function (date: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Date">Date</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
     </p>
   
   
@@ -3303,7 +3599,7 @@ if date is not provided (falsy), Calc will return the "latest" countervalue</p>
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/0cbd71b9521a440c68a783f78950668a107bc8b7/src/types/operation.js#L3-L8'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/196aa440ce756bcbc155e64069ec21a93512cb99/src/types/operation.js#L3-L8'>
       <span>src/types/operation.js</span>
       </a>
     
