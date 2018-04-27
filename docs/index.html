@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset='utf-8' />
-  <title>@ledgerhq/wallet-common 1.1.0 | Documentation</title>
+  <title>@ledgerhq/wallet-common 2.0.0-rc3 | Documentation</title>
   <meta name='viewport' content='width=device-width,initial-scale=1'>
   <link href='assets/bass.css' type='text/css' rel='stylesheet' />
   <link href='assets/style.css' type='text/css' rel='stylesheet' />
@@ -14,7 +14,7 @@
       <div id='split-left' class='overflow-auto fs0 height-viewport-100'>
         <div class='py1 px2'>
           <h3 class='mb0 no-anchor'>@ledgerhq/wallet-common</h3>
-          <div class='mb1'><code>1.1.0</code></div>
+          <div class='mb1'><code>2.0.0-rc3</code></div>
           <input
             placeholder='Filter'
             id='filter-input'
@@ -253,6 +253,16 @@
               
                 
                 <li><a
+                  href='#formatshort'
+                  class="">
+                  formatShort
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
                   href='#mockaccount'
                   class=" toggle-sibling">
                   mock/account
@@ -340,16 +350,6 @@
                   
                   
                 </div>
-                
-                </li>
-              
-                
-                <li><a
-                  href='#accountraw'
-                  class="">
-                  AccountRaw
-                  
-                </a>
                 
                 </li>
               
@@ -453,7 +453,7 @@
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/92ce7290ed49f25fe1eed25897acf29469e6ff9c/src/api/countervalue.js#L5-L5'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-live-common/blob/389794e518dfb3bd6c34d7bdfbbe855271d16c3e/src/api/countervalue.js#L5-L5'>
       <span>src/api/countervalue.js</span>
       </a>
     
@@ -491,7 +491,7 @@
       <div class="clearfix small pointer toggle-sibling">
         <div class="py1 contain">
             <a class='icon pin-right py1 dark-link caret-right'>▸</a>
-            <span class='code strong strong truncate'>fetchCurrentRates(currencies, fiatUnit)</span>
+            <span class='code strong strong truncate'>fetchCurrentRates(currencies, against)</span>
         </div>
       </div>
       <div class="clearfix display-none toggle-target">
@@ -501,7 +501,7 @@
   <div class='clearfix'>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/92ce7290ed49f25fe1eed25897acf29469e6ff9c/src/api/countervalue.js#L24-L55'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-live-common/blob/389794e518dfb3bd6c34d7bdfbbe855271d16c3e/src/api/countervalue.js#L19-L50'>
       <span>src/api/countervalue.js</span>
       </a>
     
@@ -510,7 +510,7 @@
 
   
 
-  <div class='pre p1 fill-light mt0'>fetchCurrentRates(currencies: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;Currency>, fiatUnit: FiatUnit): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&#x3C;<a href="#countervaluespairing">CounterValuesPairing</a>&#x3C;{latest: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>}>></div>
+  <div class='pre p1 fill-light mt0'>fetchCurrentRates(currencies: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;Currency>, against: Currency): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&#x3C;<a href="#countervaluespairing">CounterValuesPairing</a>&#x3C;{latest: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>}>></div>
   
   
 
@@ -535,7 +535,7 @@
       
         <div class='space-bottom0'>
           <div>
-            <span class='code bold'>fiatUnit</span> <code class='quiet'>(FiatUnit)</code>
+            <span class='code bold'>against</span> <code class='quiet'>(Currency)</code>
 	    
           </div>
           
@@ -571,7 +571,7 @@
       <div class="clearfix small pointer toggle-sibling">
         <div class="py1 contain">
             <a class='icon pin-right py1 dark-link caret-right'>▸</a>
-            <span class='code strong strong truncate'>fetchHistodayRates(currencyOrCurrencies, fiatUnit, getLatestDayFetched)</span>
+            <span class='code strong strong truncate'>fetchHistodayRates(currencies, against, getLatestDayFetched)</span>
         </div>
       </div>
       <div class="clearfix display-none toggle-target">
@@ -581,7 +581,7 @@
   <div class='clearfix'>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/92ce7290ed49f25fe1eed25897acf29469e6ff9c/src/api/countervalue.js#L81-L134'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-live-common/blob/389794e518dfb3bd6c34d7bdfbbe855271d16c3e/src/api/countervalue.js#L112-L134'>
       <span>src/api/countervalue.js</span>
       </a>
     
@@ -592,7 +592,7 @@
 per day granularity.</p>
 
 
-  <div class='pre p1 fill-light mt0'>fetchHistodayRates(currencyOrCurrencies: (Currency | <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;Currency>), fiatUnit: FiatUnit, getLatestDayFetched: function (Currency): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>?): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&#x3C;<a href="#countervaluespairing">CounterValuesPairing</a>&#x3C;Histoday>></div>
+  <div class='pre p1 fill-light mt0'>fetchHistodayRates(currencies: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;Currency>, against: Currency, getLatestDayFetched: function (Currency): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>?): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&#x3C;<a href="#countervaluespairing">CounterValuesPairing</a>&#x3C;Histoday>></div>
   
   
 
@@ -609,7 +609,7 @@ per day granularity.</p>
       
         <div class='space-bottom0'>
           <div>
-            <span class='code bold'>currencyOrCurrencies</span> <code class='quiet'>((Currency | <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;Currency>))</code>
+            <span class='code bold'>currencies</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;Currency>)</code>
 	    
           </div>
           
@@ -617,7 +617,7 @@ per day granularity.</p>
       
         <div class='space-bottom0'>
           <div>
-            <span class='code bold'>fiatUnit</span> <code class='quiet'>(FiatUnit)</code>
+            <span class='code bold'>against</span> <code class='quiet'>(Currency)</code>
 	    
           </div>
           
@@ -692,7 +692,7 @@ NOTE: This allow implementation to do two things:
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/92ce7290ed49f25fe1eed25897acf29469e6ff9c/src/api/countervalue.js#L62-L65'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-live-common/blob/389794e518dfb3bd6c34d7bdfbbe855271d16c3e/src/api/countervalue.js#L57-L60'>
       <span>src/api/countervalue.js</span>
       </a>
     
@@ -752,7 +752,7 @@ TODO we will probably make the countervalue server returning this information
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/92ce7290ed49f25fe1eed25897acf29469e6ff9c/src/bridgestream/exporter.js#L19-L41'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-live-common/blob/389794e518dfb3bd6c34d7bdfbbe855271d16c3e/src/bridgestream/exporter.js#L19-L41'>
       <span>src/bridgestream/exporter.js</span>
       </a>
     
@@ -869,7 +869,7 @@ TODO we will probably make the countervalue server returning this information
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/92ce7290ed49f25fe1eed25897acf29469e6ff9c/src/bridgestream/importer.js#L18-L44'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-live-common/blob/389794e518dfb3bd6c34d7bdfbbe855271d16c3e/src/bridgestream/importer.js#L18-L44'>
       <span>src/bridgestream/importer.js</span>
       </a>
     
@@ -946,7 +946,7 @@ TODO we will probably make the countervalue server returning this information
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/92ce7290ed49f25fe1eed25897acf29469e6ff9c/src/bridgestream/importer.js#L50-L51'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-live-common/blob/389794e518dfb3bd6c34d7bdfbbe855271d16c3e/src/bridgestream/importer.js#L50-L51'>
       <span>src/bridgestream/importer.js</span>
       </a>
     
@@ -1015,7 +1015,7 @@ TODO we will probably make the countervalue server returning this information
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/92ce7290ed49f25fe1eed25897acf29469e6ff9c/src/bridgestream/importer.js#L57-L89'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-live-common/blob/389794e518dfb3bd6c34d7bdfbbe855271d16c3e/src/bridgestream/importer.js#L57-L89'>
       <span>src/bridgestream/importer.js</span>
       </a>
     
@@ -1084,7 +1084,7 @@ TODO we will probably make the countervalue server returning this information
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/92ce7290ed49f25fe1eed25897acf29469e6ff9c/src/DataModel.js#L10-L18'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-live-common/blob/389794e518dfb3bd6c34d7bdfbbe855271d16c3e/src/DataModel.js#L10-L18'>
       <span>src/DataModel.js</span>
       </a>
     
@@ -1132,7 +1132,7 @@ TODO we will probably make the countervalue server returning this information
   <div class='clearfix'>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/92ce7290ed49f25fe1eed25897acf29469e6ff9c/src/DataModel.js#L6-L9'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-live-common/blob/389794e518dfb3bd6c34d7bdfbbe855271d16c3e/src/DataModel.js#L6-L9'>
       <span>src/DataModel.js</span>
       </a>
     
@@ -1215,7 +1215,7 @@ TODO we will probably make the countervalue server returning this information
   <div class='clearfix'>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/92ce7290ed49f25fe1eed25897acf29469e6ff9c/src/DataModel.js#L20-L23'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-live-common/blob/389794e518dfb3bd6c34d7bdfbbe855271d16c3e/src/DataModel.js#L20-L23'>
       <span>src/DataModel.js</span>
       </a>
     
@@ -1298,7 +1298,7 @@ TODO we will probably make the countervalue server returning this information
   <div class='clearfix'>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/92ce7290ed49f25fe1eed25897acf29469e6ff9c/src/DataModel.js#L36-L58'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-live-common/blob/389794e518dfb3bd6c34d7bdfbbe855271d16c3e/src/DataModel.js#L36-L58'>
       <span>src/DataModel.js</span>
       </a>
     
@@ -1378,7 +1378,7 @@ TODO we will probably make the countervalue server returning this information
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/92ce7290ed49f25fe1eed25897acf29469e6ff9c/src/helpers/account.js#L5-L12'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-live-common/blob/389794e518dfb3bd6c34d7bdfbbe855271d16c3e/src/helpers/account.js#L5-L12'>
       <span>src/helpers/account.js</span>
       </a>
     
@@ -1426,7 +1426,7 @@ TODO we will probably make the countervalue server returning this information
   <div class='clearfix'>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/92ce7290ed49f25fe1eed25897acf29469e6ff9c/src/helpers/account.js#L24-L44'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-live-common/blob/389794e518dfb3bd6c34d7bdfbbe855271d16c3e/src/helpers/account.js#L24-L44'>
       <span>src/helpers/account.js</span>
       </a>
     
@@ -1499,7 +1499,7 @@ The last item of the array is the balance available right now.</p>
       <div class="clearfix small pointer toggle-sibling">
         <div class="py1 contain">
             <a class='icon pin-right py1 dark-link caret-right'>▸</a>
-            <span class='code strong strong truncate'>getBalanceHistorySum(accounts, daysCount, fiatUnit, calculateCounterValue)</span>
+            <span class='code strong strong truncate'>getBalanceHistorySum(accounts, daysCount, currency, calculateCounterValue)</span>
         </div>
       </div>
       <div class="clearfix display-none toggle-target">
@@ -1509,7 +1509,7 @@ The last item of the array is the balance available right now.</p>
   <div class='clearfix'>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/92ce7290ed49f25fe1eed25897acf29469e6ff9c/src/helpers/account.js#L52-L81'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-live-common/blob/389794e518dfb3bd6c34d7bdfbbe855271d16c3e/src/helpers/account.js#L52-L81'>
       <span>src/helpers/account.js</span>
       </a>
     
@@ -1521,7 +1521,7 @@ and using a CalculateCounterValue function (see countervalue helper)
 NB the last item of the array is actually the current total balance.</p>
 
 
-  <div class='pre p1 fill-light mt0'>getBalanceHistorySum(accounts: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;Account>, daysCount: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>, fiatUnit: FiatUnit, calculateCounterValue: <a href="#calculatecountervalue">CalculateCounterValue</a>): BalanceHistory</div>
+  <div class='pre p1 fill-light mt0'>getBalanceHistorySum(accounts: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;Account>, daysCount: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>, currency: Currency, calculateCounterValue: <a href="#calculatecountervalue">CalculateCounterValue</a>): BalanceHistory</div>
   
   
 
@@ -1554,7 +1554,7 @@ NB the last item of the array is actually the current total balance.</p>
       
         <div class='space-bottom0'>
           <div>
-            <span class='code bold'>fiatUnit</span> <code class='quiet'>(FiatUnit)</code>
+            <span class='code bold'>currency</span> <code class='quiet'>(Currency)</code>
 	    
           </div>
           
@@ -1608,7 +1608,7 @@ NB the last item of the array is actually the current total balance.</p>
   <div class='clearfix'>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/92ce7290ed49f25fe1eed25897acf29469e6ff9c/src/helpers/account.js#L89-L114'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-live-common/blob/389794e518dfb3bd6c34d7bdfbbe855271d16c3e/src/helpers/account.js#L89-L114'>
       <span>src/helpers/account.js</span>
       </a>
     
@@ -1689,7 +1689,7 @@ NB the last item of the array is actually the current total balance.</p>
   <div class='clearfix'>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/92ce7290ed49f25fe1eed25897acf29469e6ff9c/src/helpers/account.js#L119-L162'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-live-common/blob/389794e518dfb3bd6c34d7bdfbbe855271d16c3e/src/helpers/account.js#L119-L162'>
       <span>src/helpers/account.js</span>
       </a>
     
@@ -1777,7 +1777,7 @@ NB the last item of the array is actually the current total balance.</p>
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/92ce7290ed49f25fe1eed25897acf29469e6ff9c/src/helpers/countervalue.js#L6-L11'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-live-common/blob/389794e518dfb3bd6c34d7bdfbbe855271d16c3e/src/helpers/countervalue.js#L6-L11'>
       <span>src/helpers/countervalue.js</span>
       </a>
     
@@ -1825,7 +1825,7 @@ NB the last item of the array is actually the current total balance.</p>
   <div class='clearfix'>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/92ce7290ed49f25fe1eed25897acf29469e6ff9c/src/helpers/countervalue.js#L18-L21'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-live-common/blob/389794e518dfb3bd6c34d7bdfbbe855271d16c3e/src/helpers/countervalue.js#L18-L21'>
       <span>src/helpers/countervalue.js</span>
       </a>
     
@@ -1901,7 +1901,7 @@ NB the last item of the array is actually the current total balance.</p>
   <div class='clearfix'>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/92ce7290ed49f25fe1eed25897acf29469e6ff9c/src/helpers/countervalue.js#L29-L40'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-live-common/blob/389794e518dfb3bd6c34d7bdfbbe855271d16c3e/src/helpers/countervalue.js#L29-L40'>
       <span>src/helpers/countervalue.js</span>
       </a>
     
@@ -1976,7 +1976,7 @@ NB you still have to sync prices yourself. (later we might embrace future React 
   <div class='clearfix'>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/92ce7290ed49f25fe1eed25897acf29469e6ff9c/src/helpers/countervalue.js#L47-L59'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-live-common/blob/389794e518dfb3bd6c34d7bdfbbe855271d16c3e/src/helpers/countervalue.js#L47-L59'>
       <span>src/helpers/countervalue.js</span>
       </a>
     
@@ -2050,7 +2050,7 @@ this allows to goes from a countervalue to the currency value.</p>
   <div class='clearfix'>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/92ce7290ed49f25fe1eed25897acf29469e6ff9c/src/helpers/countervalue.js#L68-L69'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-live-common/blob/389794e518dfb3bd6c34d7bdfbbe855271d16c3e/src/helpers/countervalue.js#L68-L69'>
       <span>src/helpers/countervalue.js</span>
       </a>
     
@@ -2127,7 +2127,7 @@ For instance, for 1 BTC, valueFromUnit(1, btcUnit) returns 100000000</p>
   <div class='clearfix'>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/92ce7290ed49f25fe1eed25897acf29469e6ff9c/src/helpers/countervalue.js#L75-L76'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-live-common/blob/389794e518dfb3bd6c34d7bdfbbe855271d16c3e/src/helpers/countervalue.js#L75-L76'>
       <span>src/helpers/countervalue.js</span>
       </a>
     
@@ -2195,7 +2195,7 @@ For instance, for 1 BTC, valueFromUnit(1, btcUnit) returns 100000000</p>
   <div class='clearfix'>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/92ce7290ed49f25fe1eed25897acf29469e6ff9c/src/helpers/countervalue.js#L82-L85'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-live-common/blob/389794e518dfb3bd6c34d7bdfbbe855271d16c3e/src/helpers/countervalue.js#L82-L85'>
       <span>src/helpers/countervalue.js</span>
       </a>
     
@@ -2266,12 +2266,90 @@ For instance, for 1 BTC, valueFromUnit(1, btcUnit) returns 100000000</p>
   
   <div class='clearfix'>
     
+    <h3 class='fl m0' id='formatshort'>
+      formatShort
+    </h3>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-live-common/blob/389794e518dfb3bd6c34d7bdfbbe855271d16c3e/src/helpers/currencies/formatShort.js#L9-L13'>
+      <span>src/helpers/currencies/formatShort.js</span>
+      </a>
+    
+  </div>
+  
+
+  <p>This will format in a very concise way a valid, typically to be used on axis.
+For instance 15k 20k ,...</p>
+
+
+  <div class='pre p1 fill-light mt0'>formatShort(unit: Unit, value: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>unit</span> <code class='quiet'>(Unit)</code>
+	    
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>value</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
+	    
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></code>
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
     <h3 class='fl m0' id='mockaccount'>
       mock/account
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/92ce7290ed49f25fe1eed25897acf29469e6ff9c/src/mock/account.js#L5-L5'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-live-common/blob/389794e518dfb3bd6c34d7bdfbbe855271d16c3e/src/mock/account.js#L5-L5'>
       <span>src/mock/account.js</span>
       </a>
     
@@ -2319,7 +2397,7 @@ For instance, for 1 BTC, valueFromUnit(1, btcUnit) returns 100000000</p>
   <div class='clearfix'>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/92ce7290ed49f25fe1eed25897acf29469e6ff9c/src/mock/account.js#L15-L18'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-live-common/blob/389794e518dfb3bd6c34d7bdfbbe855271d16c3e/src/mock/account.js#L14-L17'>
       <span>src/mock/account.js</span>
       </a>
     
@@ -2386,7 +2464,7 @@ For instance, for 1 BTC, valueFromUnit(1, btcUnit) returns 100000000</p>
   <div class='clearfix'>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/92ce7290ed49f25fe1eed25897acf29469e6ff9c/src/mock/account.js#L23-L25'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-live-common/blob/389794e518dfb3bd6c34d7bdfbbe855271d16c3e/src/mock/account.js#L22-L24'>
       <span>src/mock/account.js</span>
       </a>
     
@@ -2461,7 +2539,7 @@ For instance, for 1 BTC, valueFromUnit(1, btcUnit) returns 100000000</p>
   <div class='clearfix'>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/92ce7290ed49f25fe1eed25897acf29469e6ff9c/src/mock/account.js#L30-L35'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-live-common/blob/389794e518dfb3bd6c34d7bdfbbe855271d16c3e/src/mock/account.js#L29-L34'>
       <span>src/mock/account.js</span>
       </a>
     
@@ -2470,7 +2548,7 @@ For instance, for 1 BTC, valueFromUnit(1, btcUnit) returns 100000000</p>
 
   
 
-  <div class='pre p1 fill-light mt0'>genAddress(currency: Currency, rng: Prando)</div>
+  <div class='pre p1 fill-light mt0'>genAddress(currency: CryptoCurrency, rng: Prando)</div>
   
   
 
@@ -2487,7 +2565,7 @@ For instance, for 1 BTC, valueFromUnit(1, btcUnit) returns 100000000</p>
       
         <div class='space-bottom0'>
           <div>
-            <span class='code bold'>currency</span> <code class='quiet'>(Currency)</code>
+            <span class='code bold'>currency</span> <code class='quiet'>(CryptoCurrency)</code>
 	    
           </div>
           
@@ -2536,7 +2614,7 @@ For instance, for 1 BTC, valueFromUnit(1, btcUnit) returns 100000000</p>
   <div class='clearfix'>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/92ce7290ed49f25fe1eed25897acf29469e6ff9c/src/mock/account.js#L41-L66'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-live-common/blob/389794e518dfb3bd6c34d7bdfbbe855271d16c3e/src/mock/account.js#L40-L65'>
       <span>src/mock/account.js</span>
       </a>
     
@@ -2545,7 +2623,7 @@ For instance, for 1 BTC, valueFromUnit(1, btcUnit) returns 100000000</p>
 
   
 
-  <div class='pre p1 fill-light mt0'>genOperation(account: Account, ops: any, currency: Currency, rng: Prando): <a href="#operation">Operation</a></div>
+  <div class='pre p1 fill-light mt0'>genOperation(account: Account, ops: any, currency: CryptoCurrency, rng: Prando): <a href="#operation">Operation</a></div>
   
   
 
@@ -2578,7 +2656,7 @@ For instance, for 1 BTC, valueFromUnit(1, btcUnit) returns 100000000</p>
       
         <div class='space-bottom0'>
           <div>
-            <span class='code bold'>currency</span> <code class='quiet'>(Currency)</code>
+            <span class='code bold'>currency</span> <code class='quiet'>(CryptoCurrency)</code>
 	    
           </div>
           
@@ -2632,7 +2710,7 @@ For instance, for 1 BTC, valueFromUnit(1, btcUnit) returns 100000000</p>
   <div class='clearfix'>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/92ce7290ed49f25fe1eed25897acf29469e6ff9c/src/mock/account.js#L71-L87'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-live-common/blob/389794e518dfb3bd6c34d7bdfbbe855271d16c3e/src/mock/account.js#L70-L86'>
       <span>src/mock/account.js</span>
       </a>
     
@@ -2720,7 +2798,7 @@ For instance, for 1 BTC, valueFromUnit(1, btcUnit) returns 100000000</p>
   <div class='clearfix'>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/92ce7290ed49f25fe1eed25897acf29469e6ff9c/src/mock/account.js#L89-L92'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-live-common/blob/389794e518dfb3bd6c34d7bdfbbe855271d16c3e/src/mock/account.js#L88-L91'>
       <span>src/mock/account.js</span>
       </a>
     
@@ -2812,7 +2890,7 @@ For instance, for 1 BTC, valueFromUnit(1, btcUnit) returns 100000000</p>
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/92ce7290ed49f25fe1eed25897acf29469e6ff9c/src/models/account.js#L5-L5'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-live-common/blob/389794e518dfb3bd6c34d7bdfbbe855271d16c3e/src/models/account.js#L5-L5'>
       <span>src/models/account.js</span>
       </a>
     
@@ -2860,7 +2938,7 @@ For instance, for 1 BTC, valueFromUnit(1, btcUnit) returns 100000000</p>
   <div class='clearfix'>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/92ce7290ed49f25fe1eed25897acf29469e6ff9c/src/models/account.js#L13-L17'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-live-common/blob/389794e518dfb3bd6c34d7bdfbbe855271d16c3e/src/models/account.js#L13-L17'>
       <span>src/models/account.js</span>
       </a>
     
@@ -2935,7 +3013,7 @@ For instance, for 1 BTC, valueFromUnit(1, btcUnit) returns 100000000</p>
   <div class='clearfix'>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/92ce7290ed49f25fe1eed25897acf29469e6ff9c/src/models/account.js#L27-L86'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-live-common/blob/389794e518dfb3bd6c34d7bdfbbe855271d16c3e/src/models/account.js#L27-L85'>
       <span>src/models/account.js</span>
       </a>
     
@@ -3025,166 +3103,7 @@ For instance, for 1 BTC, valueFromUnit(1, btcUnit) returns 100000000</p>
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/92ce7290ed49f25fe1eed25897acf29469e6ff9c/src/types/account.js#L7-L12'>
-      <span>src/types/account.js</span>
-      </a>
-    
-  </div>
-  
-
-  <p>Account</p>
-<pre><code>                             -------
-</code></pre>
-
-
-  <div class='pre p1 fill-light mt0'>AccountRaw</div>
-  
-    <p>
-      Type:
-      {id: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, xpub: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, path: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, rootPath: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, name: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, address: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, addresses: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>>, balance: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>, coinType: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>, blockHeight: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>, archived: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a>, index: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>, balanceByDay: any, operations: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;OperationRaw>, unitMagnitude: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>, lastSyncDate: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>}
-    </p>
-  
-  
-
-  
-  
-  
-  
-  
-  
-
-  
-
-  
-    <div class='py1 quiet mt1 prose-big'>Properties</div>
-    <div>
-      
-        <div class='space-bottom0'>
-          <span class='code bold'>id</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
-          
-          
-        </div>
-      
-        <div class='space-bottom0'>
-          <span class='code bold'>xpub</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
-          
-          
-        </div>
-      
-        <div class='space-bottom0'>
-          <span class='code bold'>path</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
-          
-          
-        </div>
-      
-        <div class='space-bottom0'>
-          <span class='code bold'>rootPath</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
-          
-          
-        </div>
-      
-        <div class='space-bottom0'>
-          <span class='code bold'>name</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
-          
-          
-        </div>
-      
-        <div class='space-bottom0'>
-          <span class='code bold'>address</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
-          
-          
-        </div>
-      
-        <div class='space-bottom0'>
-          <span class='code bold'>addresses</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>>)</code>
-          
-          
-        </div>
-      
-        <div class='space-bottom0'>
-          <span class='code bold'>balance</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
-          
-          
-        </div>
-      
-        <div class='space-bottom0'>
-          <span class='code bold'>coinType</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
-          
-          
-        </div>
-      
-        <div class='space-bottom0'>
-          <span class='code bold'>blockHeight</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
-          
-          
-        </div>
-      
-        <div class='space-bottom0'>
-          <span class='code bold'>archived</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a>)</code>
-          
-          
-        </div>
-      
-        <div class='space-bottom0'>
-          <span class='code bold'>index</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
-          
-          
-        </div>
-      
-        <div class='space-bottom0'>
-          <span class='code bold'>balanceByDay</span> <code class='quiet'>(any)</code>
-          
-          
-        </div>
-      
-        <div class='space-bottom0'>
-          <span class='code bold'>operations</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;OperationRaw>)</code>
-          
-          
-        </div>
-      
-        <div class='space-bottom0'>
-          <span class='code bold'>unitMagnitude</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
-          
-          
-        </div>
-      
-        <div class='space-bottom0'>
-          <span class='code bold'>lastSyncDate</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
-          
-          
-        </div>
-      
-    </div>
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-</section>
-
-          
-        
-          
-            <section class='p2 mb2 clearfix bg-white minishadow'>
-
-  
-  <div class='clearfix'>
-    
-    <h3 class='fl m0' id='accountraw'>
-      AccountRaw
-    </h3>
-    
-    
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/92ce7290ed49f25fe1eed25897acf29469e6ff9c/src/types/index.js#L18-L18'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-live-common/blob/389794e518dfb3bd6c34d7bdfbbe855271d16c3e/src/types/index.js#L23-L23'>
       <span>src/types/index.js</span>
       </a>
     
@@ -3240,7 +3159,7 @@ For instance, for 1 BTC, valueFromUnit(1, btcUnit) returns 100000000</p>
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/92ce7290ed49f25fe1eed25897acf29469e6ff9c/src/types/index.js#L27-L30'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-live-common/blob/389794e518dfb3bd6c34d7bdfbbe855271d16c3e/src/types/index.js#L31-L34'>
       <span>src/types/index.js</span>
       </a>
     
@@ -3313,7 +3232,7 @@ For instance, for 1 BTC, valueFromUnit(1, btcUnit) returns 100000000</p>
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/92ce7290ed49f25fe1eed25897acf29469e6ff9c/src/types/index.js#L44-L47'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-live-common/blob/389794e518dfb3bd6c34d7bdfbbe855271d16c3e/src/types/index.js#L48-L51'>
       <span>src/types/index.js</span>
       </a>
     
@@ -3370,7 +3289,7 @@ e.g. CounterValuesPairing<number> can be { BTC: { USD: 1 } }</p>
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/92ce7290ed49f25fe1eed25897acf29469e6ff9c/src/types/index.js#L56-L66'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-live-common/blob/389794e518dfb3bd6c34d7bdfbbe855271d16c3e/src/types/index.js#L60-L70'>
       <span>src/types/index.js</span>
       </a>
     
@@ -3389,7 +3308,7 @@ NB Ideally a get pair history implementation should fallback on 0 if before the 
   
     <p>
       Type:
-      function (coinTicker: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, fiatTicker: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>): function (<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Date">Date</a>?): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+      function (<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>): function (<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Date">Date</a>?): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
     </p>
   
   
@@ -3438,7 +3357,7 @@ NB Ideally a get pair history implementation should fallback on 0 if before the 
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/92ce7290ed49f25fe1eed25897acf29469e6ff9c/src/types/index.js#L72-L75'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-live-common/blob/389794e518dfb3bd6c34d7bdfbbe855271d16c3e/src/types/index.js#L73-L76'>
       <span>src/types/index.js</span>
       </a>
     
@@ -3495,7 +3414,7 @@ if date is not provided (falsy), Calc will return the "latest" countervalue</p>
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/92ce7290ed49f25fe1eed25897acf29469e6ff9c/src/types/index.js#L82-L83'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-live-common/blob/389794e518dfb3bd6c34d7bdfbbe855271d16c3e/src/types/index.js#L83-L84'>
       <span>src/types/index.js</span>
       </a>
     
@@ -3508,7 +3427,7 @@ if date is not provided (falsy), Calc will return the "latest" countervalue</p>
   
     <p>
       Type:
-      function (cur: Currency, fiat: FiatUnit): <a href="#calc">Calc</a>
+      function (Currency, Currency): <a href="#calc">Calc</a>
     </p>
   
   
@@ -3550,7 +3469,7 @@ if date is not provided (falsy), Calc will return the "latest" countervalue</p>
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/92ce7290ed49f25fe1eed25897acf29469e6ff9c/src/types/index.js#L86-L87'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-live-common/blob/389794e518dfb3bd6c34d7bdfbbe855271d16c3e/src/types/index.js#L87-L88'>
       <span>src/types/index.js</span>
       </a>
     
@@ -3563,7 +3482,7 @@ if date is not provided (falsy), Calc will return the "latest" countervalue</p>
   
     <p>
       Type:
-      function (cur: Currency, fiat: FiatUnit): function (date: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Date">Date</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+      function (Currency, Currency): function (<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Date">Date</a>?): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
     </p>
   
   
@@ -3605,7 +3524,7 @@ if date is not provided (falsy), Calc will return the "latest" countervalue</p>
     </h3>
     
     
-      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-wallet-common/blob/92ce7290ed49f25fe1eed25897acf29469e6ff9c/src/types/operation.js#L3-L8'>
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LedgerHQ/ledger-live-common/blob/389794e518dfb3bd6c34d7bdfbbe855271d16c3e/src/types/operation.js#L3-L8'>
       <span>src/types/operation.js</span>
       </a>
     
